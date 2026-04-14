@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>About Us | Marula Fund Managers</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Learn about Marula Fund Managers, an impact-driven venture capital firm focused on structured execution, governance, and investing in early-stage technology ventures across South Africa.">
+    <meta name="keywords" content="about Marula Fund Managers, venture capital firm South Africa, investment company profile, impact investing, startup funding SA">
+    <meta name="author" content="Marula Fund Managers">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://marulafund.com/about.html">
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="About Marula Fund Managers">
+    <meta property="og:description" content="Discover our philosophy, leadership, and structured approach to impact-driven venture capital in South Africa.">
+    <meta property="og:url" content="https://marulafund.com/about.html">
+    <meta property="og:site_name" content="Marula Fund Managers">
+    <meta property="og:image" content="https://marulafund.com/images/og-about.jpg">
+    <meta property="og:image:alt" content="About Marula Fund Managers">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Marula Fund Managers">
+    <meta name="twitter:description" content="Our mission, philosophy, and approach to venture capital and impact investing.">
+    <meta name="twitter:image" content="https://marulafund.com/images/og-about.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'marula-dark': '#1a1a1a',
+                        'marula-gold': '#c9a962',
+                        'marula-gold-light': '#d4b978',
+                        'marula-gray': '#2d2d2d',
+                        'marula-light': '#f5f5f0',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%, rgba(45,45,45,0.85) 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #c9a962 0%, #d4b978 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-scrolled {
+            background: rgba(26,26,26,0.98);
+            backdrop-filter: blur(10px);
+        }
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #c9a962, #d4b978);
+        }
+
+                /* Mobile Sidebar Styles */
+        #mobile-sidebar {
+            will-change: transform;
+        }
+        
+        .mobile-nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mobile-nav-link::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: #c9a962;
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-nav-link:hover::before,
+        .mobile-nav-link.active::before {
+            transform: scaleY(1);
+        }
+        
+        /* Active page highlighting */
+        .mobile-nav-link.active {
+            background: rgba(201, 169, 98, 0.1);
+            color: #c9a962;
+        }
+        
+        .mobile-nav-link.active > div {
+            background: #c9a962;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-marula-light text-marula-dark">
+
+    <!-- Navigation -->
+        <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center">
+                        <span class="text-white font-serif font-bold text-lg">M</span>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="font-serif text-xl font-semibold text-white">Marula Fund Managers</h1>
+                        <p class="text-xs text-marula-gold tracking-wider">IMPACT DRIVEN CAPITAL</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu - UNCHANGED -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-marula-gold transition-colors text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Services</a>
+                    <a href="investment-mandate.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Investment Mandate</a>
+                    <a href="contact.html" class="px-5 py-2 bg-marula-gold text-marula-dark font-medium rounded hover:bg-marula-gold-light transition-colors text-sm">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button - UPDATED -->
+                <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-marula-gold transition-all">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div id="mobile-sidebar-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 transform translate-x-full transition-transform duration-300 ease-out shadow-2xl lg:hidden">
+        <!-- Sidebar Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-100">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center">
+                    <span class="text-white font-serif font-bold text-lg">M</span>
+                </div>
+                <div>
+                    <h1 class="font-serif text-lg font-semibold text-marula-dark">Marula</h1>
+                    <p class="text-xs text-marula-gold tracking-wider">FUND MANAGERS</p>
+                </div>
+            </div>
+            <button id="mobile-sidebar-close" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-marula-gold hover:text-white transition-all">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="p-6">
+            <ul class="space-y-1">
+                <li>
+                    <a href="index.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="home" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="building-2" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="investment-mandate.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Investment Mandate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Footer -->
+        <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-100 bg-gray-50">
+            <div class="space-y-3">
+                <a href="tel:+27721512953" class="flex items-center space-x-3 text-gray-600 hover:text-marula-gold transition-colors">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span class="text-sm font-medium">+27 72 151 2953</span>
+                </a>
+                <a href="mailto:info@marulafund.com" class="flex items-center space-x-3 text-gray-600 hover:text-marula-gold transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    <span class="text-sm font-medium break-all">info@marulafund.com</span>
+                </a>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="flex space-x-3 mt-6 pt-4 border-t border-gray-200">
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                    <i class="fa-brands fa-linkedin text-lg"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                    <i class="fa-brands fa-x-twitter text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="relative py-32 md:py-40 bg-marula-dark">
+        <div class="absolute inset-0">
+            <img src="images/hero.jpg" alt="Modern Architecture" class="w-full h-full object-cover opacity-30">
+            <div class="gradient-overlay absolute inset-0"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-marula-gold text-sm tracking-[0.3em] uppercase mb-4 font-medium">Who We Are</p>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-semibold leading-tight mb-6">
+                About <span class="text-gradient">Marula Fund Managers</span>
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                100% black owned, impact-driven venture capital manager established to mobilise institutional capital into early-stage technology ventures.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="section-fade">
+                    <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Our Story</p>
+                    <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-6">
+                        Built Around Execution
+                    </h2>
+                    <div class="space-y-4 text-gray-600 leading-relaxed">
+                        <p>
+                            Marula Fund Managers is a <strong>100 percent black owned, impact-driven venture capital manager</strong> established to mobilise and deploy institutional capital into early-stage and first commercial technology ventures aligned with South Africa's development priorities.
+                        </p>
+                        <p>
+                            The firm is structured as a <strong>R100 million innovation fund</strong>, targeting an initial R30 million seed commitment from TIA, with individual investments ranging between <strong>R1 million and R10 million</strong> deployed through equity, convertible equity, or debt instruments.
+                        </p>
+                        <p>
+                            Marula Fund Managers is <strong>not positioned as a passive capital allocator</strong>. It operates as an intervention-based venture builder that integrates structured project preparation, institutional-grade governance, disciplined deal execution, and technology-enabled portfolio monitoring.
+                        </p>
+                        <p>
+                            <em>"Ambition is common. Structured execution is not. Marula Fund Managers is built around execution."</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="section-fade relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="images/about1.jpg" alt="Team Meeting" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                        <img src="images/about2.jpg" alt="Strategy Session" class="rounded-lg shadow-lg w-full h-64 object-cover mt-8">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-marula-gold p-6 rounded-lg shadow-xl">
+                        <p class="font-serif text-3xl font-bold text-marula-dark">100%</p>
+                        <p class="text-marula-dark/80 text-sm">Black Owned</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 md:py-32 bg-marula-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="section-fade bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+                    <div class="w-16 h-16 bg-marula-gold/10 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="target" class="w-8 h-8 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-marula-dark mb-4">Our Mission</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        To reduce early-stage innovation failure, strengthen commercialisation pathways, deliver venture-scale financial returns, and advance inclusive economic transformation.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Reduce early-stage innovation failure</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Strengthen commercialisation pathways</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Deliver venture-scale financial returns</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Advance inclusive economic transformation</li>
+                    </ul>
+                </div>
+                <div class="section-fade bg-marula-dark p-8 md:p-12 rounded-2xl shadow-lg text-white">
+                    <div class="w-16 h-16 bg-marula-gold/20 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="eye" class="w-8 h-8 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold mb-4">Our Vision</h3>
+                    <p class="text-white/80 leading-relaxed mb-4">
+                        To be the premier impact-driven venture capital manager in South Africa, recognised for structured execution excellence and transformative investment outcomes.
+                    </p>
+                    <ul class="space-y-2 text-sm text-white/60">
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Premier VC manager in South Africa</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Execution excellence recognition</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Transformative investment outcomes</li>
+                        <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-marula-gold mr-2"></i>Inclusive economic growth catalyst</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="py-20 md:py-32 bg-marula-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Fund Structure</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-4">Investment Parameters</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">R100M</p>
+                    <p class="text-white/60 text-sm">Total Fund Size</p>
+                </div>
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">R1M-R10M</p>
+                    <p class="text-white/60 text-sm">Investment Range</p>
+                </div>
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">3x-7x</p>
+                    <p class="text-white/60 text-sm">Target Returns</p>
+                </div>
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">20%</p>
+                    <p class="text-white/60 text-sm">IRR Objective</p>
+                </div>
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">3-5 Yrs</p>
+                    <p class="text-white/60 text-sm">Exit Horizon</p>
+                </div>
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">100%</p>
+                    <p class="text-white/60 text-sm">Black Owned</p>
+                </div>
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">30%</p>
+                    <p class="text-white/60 text-sm">Female Shareholding</p>
+                </div>
+                <div class="section-fade text-center p-6 border border-white/10 rounded-xl">
+                    <p class="font-serif text-4xl md:text-5xl font-bold text-marula-gold mb-2">R30M</p>
+                    <p class="text-white/60 text-sm">Seed Commitment (TIA)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Philosophy Detail -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Our Approach</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-4">Investment Philosophy</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our philosophy is clear, defensible, and uncompromising. That is the spine of the fund.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="section-fade bg-marula-light p-8 rounded-xl border-l-4 border-marula-gold">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-marula-gold rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-serif text-xl font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-marula-dark mb-2">Capital Follows Readiness</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">We do not fund ideas. We fund validated execution pathways. Every investment must survive technical scrutiny, market realism, financial stress testing, and governance review before capital is deployed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-fade bg-marula-light p-8 rounded-xl border-l-4 border-marula-gold">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-marula-gold rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-serif text-xl font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-marula-dark mb-2">Early Truth Protects Returns</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">We surface fatal flaws before scale. Revenue is stress tested. Costs are conservative. Risks are explicit. If a venture cannot survive downside scenarios, it does not enter the portfolio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-fade bg-marula-light p-8 rounded-xl border-l-4 border-marula-gold">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-marula-gold rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-serif text-xl font-bold">3</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-marula-dark mb-2">Structure Drives Performance</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Risk is deliberately priced and allocated through disciplined instruments, milestone-based deployment, and aligned governance. Hidden risk creates volatility. Structured risk creates returns.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-fade bg-marula-light p-8 rounded-xl border-l-4 border-marula-gold">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-marula-gold rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-white font-serif text-xl font-bold">4</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-semibold text-marula-dark mb-2">Execution Determines Value</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Scaling is earned, not assumed. Operational capacity, capital structure, regulatory alignment, and delivery readiness are validated before expansion comes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 section-fade bg-marula-gold/10 p-8 rounded-xl border-l-4 border-marula-gold">
+                <div class="flex items-start">
+                    <div class="w-12 h-12 bg-marula-gold rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <span class="text-white font-serif text-xl font-bold">5</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-xl font-semibold text-marula-dark mb-2">Impact and Returns Are Interdependent</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Transformation, ESG alignment, and inclusive growth are not concessions. They are competitive advantages that drive sustainable value creation. Impact is not treated as marketing language—it is embedded in sourcing, evaluation, and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation & Impact -->
+    <section class="py-20 md:py-32 bg-marula-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="section-fade relative">
+                    <img src="images/about.jpg" alt="Diverse Team" class="rounded-2xl shadow-2xl w-full">
+                    <div class="absolute -bottom-6 -right-6 bg-marula-dark p-6 rounded-xl shadow-xl">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i data-lucide="award" class="w-6 h-6 text-marula-gold"></i>
+                            <span class="text-white font-semibold">B-BBEE Level 1</span>
+                        </div>
+                        <p class="text-white/60 text-sm">100% Black Owned</p>
+                    </div>
+                </div>
+                <div class="section-fade">
+                    <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Transformation</p>
+                    <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-6">
+                        Impact is Embedded in Everything We Do
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Marula Fund Managers embeds transformation as an investment filter and portfolio commitment. Impact is not treated as marketing language—it is embedded in sourcing, evaluation, and performance.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="users" class="w-5 h-5 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Black Owned Startups</h4>
+                                <p class="text-gray-500 text-sm">Prioritising black-owned enterprises with significant shareholding</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="user-check" class="w-5 h-5 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Women Led Ventures</h4>
+                                <p class="text-gray-500 text-sm">Supporting women entrepreneurs and female-led management teams</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Township & Rural Entrepreneurs</h4>
+                                <p class="text-gray-500 text-sm">Reaching beyond traditional business centres to unlock potential</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Youth Inclusion</h4>
+                                <p class="text-gray-500 text-sm">Driving employment and entrepreneurship among young South Africans</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 p-6 bg-white rounded-xl shadow-md">
+                        <h4 class="font-semibold text-marula-dark mb-3">Impact Measurement</h4>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <p class="font-serif text-2xl font-bold text-marula-gold">Jobs</p>
+                                <p class="text-xs text-gray-500">Creation</p>
+                            </div>
+                            <div>
+                                <p class="font-serif text-2xl font-bold text-marula-gold">SME</p>
+                                <p class="text-xs text-gray-500">Growth</p>
+                            </div>
+                            <div>
+                                <p class="font-serif text-2xl font-bold text-marula-gold">ESG</p>
+                                <p class="text-xs text-gray-500">Alignment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Differentiation -->
+    <section class="py-20 md:py-32 bg-marula-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Why Choose Us</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-4">What Makes Us Different</h2>
+                <p class="text-white/70 max-w-2xl mx-auto">Execution risk remains real. Early-stage investing is unforgiving. But ambition without structure is gambling. Marula Fund Managers is structured. And structure is what institutional capital trusts.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="section-fade bg-white/5 p-6 rounded-xl border border-white/10 hover:border-marula-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-marula-gold/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="layers" class="w-6 h-6 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Integrated Capital & Preparation</h3>
+                    <p class="text-white/60 text-sm">Capital without preparation increases failure probability. Structured capital with governance increases survivability.</p>
+                </div>
+                <div class="section-fade bg-white/5 p-6 rounded-xl border border-white/10 hover:border-marula-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-marula-gold/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="shield" class="w-6 h-6 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Institutional Grade Governance</h3>
+                    <p class="text-white/60 text-sm">FAIS-aligned compliance structures, formal due diligence checklists, and audit-ready financial reporting.</p>
+                </div>
+                <div class="section-fade bg-white/5 p-6 rounded-xl border border-white/10 hover:border-marula-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-marula-gold/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="clipboard-check" class="w-6 h-6 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Score-Based Deal Evaluation</h3>
+                    <p class="text-white/60 text-sm">Technical and commercial scoring matrices applied consistently across all investment opportunities.</p>
+                </div>
+                <div class="section-fade bg-white/5 p-6 rounded-xl border border-white/10 hover:border-marula-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-marula-gold/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="git-branch" class="w-6 h-6 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Full Lifecycle Coverage</h3>
+                    <p class="text-white/60 text-sm">Nine integrated phases from project conception through financial close to implementation oversight.</p>
+                </div>
+                <div class="section-fade bg-white/5 p-6 rounded-xl border border-white/10 hover:border-marula-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-marula-gold/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Technology-Enabled Monitoring</h3>
+                    <p class="text-white/60 text-sm">Real-time KPI tracking, AI-supported investability scoring, and transparent investor dashboards.</p>
+                </div>
+                <div class="section-fade bg-white/5 p-6 rounded-xl border border-white/10 hover:border-marula-gold/50 transition-colors">
+                    <div class="w-12 h-12 bg-marula-gold/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="heart-handshake" class="w-6 h-6 text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold mb-2">Explicit Transformation Mandate</h3>
+                    <p class="text-white/60 text-sm">Impact embedded in sourcing, evaluation, and performance—not marketing language.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 md:py-32 bg-marula-gold">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center section-fade">
+            <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-4">Ready to Partner With Us?</h2>
+            <p class="text-marula-dark/80 text-lg mb-8">Let's discuss how Marula Fund Managers can support your venture's growth journey with structured capital and execution expertise.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="px-8 py-4 bg-marula-dark text-white font-semibold rounded hover:bg-gray-800 transition-all hover-lift">Schedule a Consultation</a>
+                <a href="services.html" class="px-8 py-4 border-2 border-marula-dark text-marula-dark font-semibold rounded hover:bg-marula-dark/10 transition-all">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-marula-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center"><span class="text-white font-serif font-bold text-lg">M</span></div>
+                        <h3 class="font-serif text-lg font-semibold">Marula Fund Managers</h3>
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-4">Impact-driven venture capital manager mobilising institutional capital into early-stage technology ventures.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-gold transition-colors"><i class="fa-brands fa-linkedin text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-gold transition-colors"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-gold">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-white/60 hover:text-marula-gold transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Our Services</a></li>
+                        <li><a href="investment-mandate.html" class="text-white/60 hover:text-marula-gold transition-colors">Investment Mandate</a></li>
+                        <li><a href="contact.html" class="text-white/60 hover:text-marula-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-gold">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Start-Up Funding</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Business Expansion</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Project Development</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Financial Modelling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-gold">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start space-x-3"><i data-lucide="map-pin" class="w-4 h-4 text-marula-gold mt-0.5"></i><span class="text-white/60">286 Bryanston Dr, Bryanston, Sandton, 2191</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="phone" class="w-4 h-4 text-marula-gold"></i><span class="text-white/60">+27 72 151 2953</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="mail" class="w-4 h-4 text-marula-gold"></i><span class="text-white/60">info@marulafund.com</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="clock" class="w-4 h-4 text-marula-gold"></i><span class="text-white/60">Mon - Fri: 08:00 - 17:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white/40 text-sm">© 2026 Marula Fund Managers. All rights reserved.</p>
+                <p class="text-white/40 text-sm mt-2 md:mt-0">100% Black Owned • FSP Licensed</p>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+        
+        // Mobile Sidebar Functionality
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const mobileSidebarOverlay = document.getElementById('mobile-sidebar-overlay');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileSidebarClose = document.getElementById('mobile-sidebar-close');
+        
+        function openMobileSidebar() {
+            mobileSidebar.classList.remove('translate-x-full');
+            mobileSidebarOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileSidebar() {
+            mobileSidebar.classList.add('translate-x-full');
+            mobileSidebarOverlay.classList.add('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = '';
+        }
+        
+        mobileMenuBtn.addEventListener('click', openMobileSidebar);
+        mobileSidebarClose.addEventListener('click', closeMobileSidebar);
+        mobileSidebarOverlay.addEventListener('click', closeMobileSidebar);
+        
+        // Close sidebar when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileSidebar);
+        });
+        
+        // Close sidebar on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !mobileSidebar.classList.contains('translate-x-full')) {
+                closeMobileSidebar();
+            }
+        });
+        
+        // Highlight active page in mobile sidebar
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        document.querySelectorAll('.section-fade').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

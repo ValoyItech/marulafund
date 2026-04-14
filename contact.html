@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Marula Fund Managers</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Contact Marula Fund Managers to discuss investment opportunities, funding applications, or partnerships. Reach our team via phone, email, or office visit in Sandton, South Africa.">
+    <meta name="keywords" content="contact Marula Fund Managers, venture capital contact South Africa, funding application, investment inquiries, Sandton investment firm">
+    <meta name="author" content="Marula Fund Managers">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://marulafund.com/contact.html">
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Marula Fund Managers">
+    <meta property="og:description" content="Get in touch with our team for funding, partnerships, and investment opportunities.">
+    <meta property="og:url" content="https://marulafund.com/contact.html">
+    <meta property="og:site_name" content="Marula Fund Managers">
+    <meta property="og:image" content="https://marulafund.com/images/og-contact.jpg">
+    <meta property="og:image:alt" content="Contact Marula Fund Managers">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Marula Fund Managers">
+    <meta name="twitter:description" content="Reach out to discuss funding opportunities, partnerships, or investment inquiries.">
+    <meta name="twitter:image" content="https://marulafund.com/images/og-contact.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'marula-dark': '#1a1a1a',
+                        'marula-gold': '#c9a962',
+                        'marula-gold-light': '#d4b978',
+                        'marula-gray': '#2d2d2d',
+                        'marula-light': '#f5f5f0',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%, rgba(45,45,45,0.85) 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #c9a962 0%, #d4b978 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-scrolled {
+            background: rgba(26,26,26,0.98);
+            backdrop-filter: blur(10px);
+        }
+        .form-input {
+            transition: all 0.3s ease;
+        }
+        .form-input:focus {
+            border-color: #c9a962;
+            box-shadow: 0 0 0 3px rgba(201,169,98,0.1);
+        }
+
+                /* Mobile Sidebar Styles */
+        #mobile-sidebar {
+            will-change: transform;
+        }
+        
+        .mobile-nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mobile-nav-link::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: #c9a962;
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-nav-link:hover::before,
+        .mobile-nav-link.active::before {
+            transform: scaleY(1);
+        }
+        
+        /* Active page highlighting */
+        .mobile-nav-link.active {
+            background: rgba(201, 169, 98, 0.1);
+            color: #c9a962;
+        }
+        
+        .mobile-nav-link.active > div {
+            background: #c9a962;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-marula-light text-marula-dark">
+
+    <!-- Navigation -->
+        <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center">
+                        <span class="text-white font-serif font-bold text-lg">M</span>
+                    </div>
+                    <div class="hidden sm:block">
+                        <h1 class="font-serif text-xl font-semibold text-white">Marula Fund Managers</h1>
+                        <p class="text-xs text-marula-gold tracking-wider">IMPACT DRIVEN CAPITAL</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu - UNCHANGED -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-marula-gold transition-colors text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Services</a>
+                    <a href="investment-mandate.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Investment Mandate</a>
+                    <a href="contact.html" class="px-5 py-2 bg-marula-gold text-marula-dark font-medium rounded hover:bg-marula-gold-light transition-colors text-sm">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button - UPDATED -->
+                <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-marula-gold transition-all">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div id="mobile-sidebar-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 transform translate-x-full transition-transform duration-300 ease-out shadow-2xl lg:hidden">
+        <!-- Sidebar Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-100">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center">
+                    <span class="text-white font-serif font-bold text-lg">M</span>
+                </div>
+                <div>
+                    <h1 class="font-serif text-lg font-semibold text-marula-dark">Marula</h1>
+                    <p class="text-xs text-marula-gold tracking-wider">FUND MANAGERS</p>
+                </div>
+            </div>
+            <button id="mobile-sidebar-close" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-marula-gold hover:text-white transition-all">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="p-6">
+            <ul class="space-y-1">
+                <li>
+                    <a href="index.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="home" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="building-2" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="investment-mandate.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Investment Mandate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Footer -->
+        <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-100 bg-gray-50">
+            <div class="space-y-3">
+                <a href="tel:+27721512953" class="flex items-center space-x-3 text-gray-600 hover:text-marula-gold transition-colors">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span class="text-sm font-medium">+27 72 151 2953</span>
+                </a>
+                <a href="mailto:info@marulafund.com" class="flex items-center space-x-3 text-gray-600 hover:text-marula-gold transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    <span class="text-sm font-medium break-all">info@marulafund.com</span>
+                </a>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="flex space-x-3 mt-6 pt-4 border-t border-gray-200">
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                    <i class="fa-brands fa-linkedin text-lg"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                    <i class="fa-brands fa-x-twitter text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="relative py-32 md:py-40 bg-marula-dark">
+        <div class="absolute inset-0">
+            <img src="images/contact.jpg" alt="Contact" class="w-full h-full object-cover opacity-30">
+            <div class="gradient-overlay absolute inset-0"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-marula-gold text-sm tracking-[0.3em] uppercase mb-4 font-medium">Get in Touch</p>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-semibold leading-tight mb-6">
+                Contact <span class="text-gradient">Marula Fund Managers</span>
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Ready to move your business forward? Let's work together to turn your objectives into measurable outcomes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="section-fade">
+                    <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Contact Information</p>
+                    <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-6">Let's Start a Conversation</h2>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Whether you're an entrepreneur seeking funding, an investor exploring opportunities, or a partner interested in collaboration, we'd love to hear from you.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Head Office</h4>
+                                <p class="text-gray-600">286 Bryanston Drive<br>Bryanston, Sandton, 2191<br>South Africa</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone" class="w-6 h-6 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Phone</h4>
+                                <p class="text-gray-600">+27 72 151 2953</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Email</h4>
+                                <p class="text-gray-600">info@marulafund.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-marula-dark mb-1">Business Hours</h4>
+                                <p class="text-gray-600">Monday - Friday<br>08:00 - 17:00 (SAST)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-8 pt-8 border-t border-gray-200">
+                        <h4 class="font-semibold text-marula-dark mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-marula-dark rounded-lg flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-marula-dark rounded-lg flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-marula-dark rounded-lg flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                                <i data-lucide="facebook" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="section-fade bg-marula-light p-8 md:p-12 rounded-2xl">
+                    <h3 class="font-serif text-2xl font-semibold text-marula-dark mb-6">Send Us a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+                                <input type="text" required class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none bg-white" placeholder="Your first name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+                                <input type="text" required class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none bg-white" placeholder="Your last name">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" required class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none bg-white" placeholder="your@email.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none bg-white" placeholder="+27 __ ___ ____">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company / Organisation</label>
+                            <input type="text" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none bg-white" placeholder="Your company name">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Inquiry Type *</label>
+                            <select required class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none bg-white">
+                                <option value="">Select inquiry type</option>
+                                <option value="funding">Seeking Funding</option>
+                                <option value="investment">Investment Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="advisory">Advisory Services</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea required rows="5" class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none bg-white resize-none" placeholder="Tell us about your venture or inquiry..."></textarea>
+                        </div>
+
+                        <div class="flex items-start">
+                            <input type="checkbox" required id="consent" class="mt-1 mr-3">
+                            <label for="consent" class="text-sm text-gray-600">I consent to Marula Fund Managers processing my personal information in accordance with POPIA regulations. *</label>
+                        </div>
+
+                        <button type="submit" class="w-full px-8 py-4 bg-marula-gold text-marula-dark font-semibold rounded-lg hover:bg-marula-gold-light transition-all hover-lift flex items-center justify-center">
+                            <span>Send Message</span>
+                            <i data-lucide="send" class="w-5 h-5 ml-2"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div id="success-message" class="hidden text-center py-12">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="check-circle" class="w-8 h-8 text-green-600"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-semibold text-marula-dark mb-2">Message Sent!</h4>
+                        <p class="text-gray-600">Thank you for reaching out. Our team will review your inquiry and respond within 48 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 md:py-32 bg-marula-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Visit Us</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark">Our Location</h2>
+            </div>
+            <div class="section-fade bg-white p-4 rounded-2xl shadow-lg">
+                <div class="aspect-video w-full rounded-xl overflow-hidden bg-gray-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.5023034470576!2d28.0324!3d-26.0856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573f8f1c5e4b5%3A0x5e5e5e5e5e5e5e5e!2sBryanston%2C%20Sandton%2C%202191!5e0!3m2!1sen!2sza!4v1234567890"
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full">
+                    </iframe>
+                </div>
+                <div class="mt-4 flex items-center justify-between px-4">
+                    <div class="flex items-center space-x-2 text-gray-600">
+                        <i data-lucide="navigation" class="w-5 h-5 text-marula-gold"></i>
+                        <span class="text-sm">286 Bryanston Drive, Bryanston, Sandton</span>
+                    </div>
+                    <a href="https://maps.google.com/?q=Bryanston+Sandton+2191" target="_blank" class="text-marula-gold hover:text-marula-dark transition-colors text-sm font-medium flex items-center">
+                        Get Directions <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 section-fade">
+                <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Common Questions</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="section-fade border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between bg-marula-light hover:bg-marula-gold/10 transition-colors">
+                        <span class="font-semibold text-marula-dark">What stage companies do you invest in?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-marula-gold faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">We focus on two stages: (1) Start-ups between proof of concept and first commercialisation (R1M-R5M), and (2) Business expansions with proven revenue and scalable models (R5M-R10M).</p>
+                    </div>
+                </div>
+
+                <div class="section-fade border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between bg-marula-light hover:bg-marula-gold/10 transition-colors">
+                        <span class="font-semibold text-marula-dark">What sectors do you prioritise?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-marula-gold faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">Our priority sectors include Sustainable Energy, Water Security, Climate Resilience, Bioeconomy, Health Innovation, High-Tech Industrialisation, ICT & Smart Systems, and Mining & Agriculture technology.</p>
+                    </div>
+                </div>
+
+                <div class="section-fade border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between bg-marula-light hover:bg-marula-gold/10 transition-colors">
+                        <span class="font-semibold text-marula-dark">How long does the investment process take?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-marula-gold faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">Our due diligence process typically takes 8-12 weeks from initial meeting to investment decision. This includes technical validation, financial stress testing, and governance review.</p>
+                    </div>
+                </div>
+
+                <div class="section-fade border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between bg-marula-light hover:bg-marula-gold/10 transition-colors">
+                        <span class="font-semibold text-marula-dark">Do you only invest in black-owned businesses?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-marula-gold faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">While we prioritise black-owned and women-led ventures as part of our transformation mandate, we evaluate all investment opportunities based on merit, commercial viability, and alignment with our mandate.</p>
+                    </div>
+                </div>
+
+                <div class="section-fade border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex items-center justify-between bg-marula-light hover:bg-marula-gold/10 transition-colors">
+                        <span class="font-semibold text-marula-dark">What is your approach to ESG?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-marula-gold faq-icon transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 py-4 bg-white">
+                        <p class="text-gray-600">ESG principles are embedded in our investment process from sourcing through exit. We conduct ESG screening, monitor compliance, and measure impact through job creation, SME growth, and financial inclusion metrics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 md:py-32 bg-marula-gold">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center section-fade">
+            <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-4">Ready to Submit Your Venture?</h2>
+            <p class="text-marula-dark/80 text-lg mb-8">Download our investment proposal template or schedule a preliminary call with our investment team.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="px-8 py-4 bg-marula-dark text-white font-semibold rounded hover:bg-gray-800 transition-all hover-lift flex items-center justify-center">
+                    <i data-lucide="download" class="w-5 h-5 mr-2"></i>
+                    Download Template
+                </a>
+                <a href="services.html" class="px-8 py-4 border-2 border-marula-dark text-marula-dark font-semibold rounded hover:bg-marula-dark/10 transition-all">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-marula-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center"><span class="text-white font-serif font-bold text-lg">M</span></div>
+                        <h3 class="font-serif text-lg font-semibold">Marula Fund Managers</h3>
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-4">Impact-driven venture capital manager mobilising institutional capital into early-stage technology ventures.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-gold transition-colors"><i class="fa-brands fa-linkedin text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-gold transition-colors"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-gold">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-white/60 hover:text-marula-gold transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Our Services</a></li>
+                        <li><a href="investment-mandate.html" class="text-white/60 hover:text-marula-gold transition-colors">Investment Mandate</a></li>
+                        <li><a href="contact.html" class="text-white/60 hover:text-marula-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-gold">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Start-Up Funding</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Business Expansion</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Project Development</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Financial Modelling</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-gold">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start space-x-3"><i data-lucide="map-pin" class="w-4 h-4 text-marula-gold mt-0.5"></i><span class="text-white/60">286 Bryanston Dr, Bryanston, Sandton, 2191</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="phone" class="w-4 h-4 text-marula-gold"></i><span class="text-white/60">+27 72 151 2953</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="mail" class="w-4 h-4 text-marula-gold"></i><span class="text-white/60">info@marulafund.com</span></li>
+                        <li class="flex items-center space-x-3"><i data-lucide="clock" class="w-4 h-4 text-marula-gold"></i><span class="text-white/60">Mon - Fri: 08:00 - 17:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white/40 text-sm">© 2026 Marula Fund Managers. All rights reserved.</p>
+                <p class="text-white/40 text-sm mt-2 md:mt-0">100% Black Owned • FSP Licensed</p>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+        lucide.createIcons();
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) navbar.classList.add('nav-scrolled');
+            else navbar.classList.remove('nav-scrolled');
+        });
+
+        // Mobile Sidebar Functionality (REPLACED)
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const mobileSidebarOverlay = document.getElementById('mobile-sidebar-overlay');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileSidebarClose = document.getElementById('mobile-sidebar-close');
+        
+        function openMobileSidebar() {
+            mobileSidebar.classList.remove('translate-x-full');
+            mobileSidebarOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileSidebar() {
+            mobileSidebar.classList.add('translate-x-full');
+            mobileSidebarOverlay.classList.add('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = '';
+        }
+        
+        mobileMenuBtn.addEventListener('click', openMobileSidebar);
+        mobileSidebarClose.addEventListener('click', closeMobileSidebar);
+        mobileSidebarOverlay.addEventListener('click', closeMobileSidebar);
+        
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileSidebar);
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !mobileSidebar.classList.contains('translate-x-full')) {
+                closeMobileSidebar();
+            }
+        });
+        
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
+
+        // FAQ Toggle (contact.html only)
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                content.classList.toggle('hidden');
+                icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        });
+
+        // Form submission (contact.html only)
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.getElementById('contact-form').classList.add('hidden');
+            document.getElementById('success-message').classList.remove('hidden');
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
