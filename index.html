@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marula Fund Managers | Impact-Driven Venture Capital</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Marula Fund Managers is an impact-driven venture capital firm investing in early-stage technology ventures across South Africa, empowering innovation, sustainability, and economic transformation.">
+    <meta name="keywords" content="venture capital South Africa, startup funding, investment firm, impact investing, Marula Fund Managers, early-stage funding, black-owned venture capital">
+    <meta name="author" content="Marula Fund Managers">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://marulafund.com/">
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Marula Fund Managers | Impact-Driven Venture Capital">
+    <meta property="og:description" content="Mobilising institutional capital into early-stage ventures aligned with South Africa’s development priorities.">
+    <meta property="og:url" content="https://marulafund.com/">
+    <meta property="og:site_name" content="Marula Fund Managers">
+    <meta property="og:image" content="https://marulafund.com/images/og-image.jpg">
+    <meta property="og:image:alt" content="Marula Fund Managers - Venture Capital">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marula Fund Managers | Impact-Driven Venture Capital">
+    <meta name="twitter:description" content="Investing in innovation, sustainability, and scalable ventures across South Africa.">
+    <meta name="twitter:image" content="https://marulafund.com/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +46,11 @@
                 extend: {
                     colors: {
                         'marula-dark': '#1a1a1a',
-                        'marula-gold': '#c9a962',
-                        'marula-gold-light': '#d4b978',
+                        'marula-green': '#53A445',
+                        'marula-green-light': '#5a8f6a',
+                        'marula-green-dark': '#3d6b4a',
+                        'marula-gold': '#D9C424',
+                        'marula-gold-light': '#e4c547',
                         'marula-gray': '#2d2d2d',
                         'marula-light': '#f5f5f0',
                     },
@@ -34,7 +67,7 @@
             background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%, rgba(45,45,45,0.85) 100%);
         }
         .text-gradient {
-            background: linear-gradient(135deg, #c9a962 0%, #d4b978 100%);
+            background: linear-gradient(135deg, #53A445 0%, #D9C424 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -77,7 +110,7 @@
             top: 0;
             height: 100%;
             width: 3px;
-            background: #c9a962;
+            background: #53A445;
             transform: scaleY(0);
             transition: transform 0.3s ease;
         }
@@ -89,12 +122,12 @@
         
         /* Active page highlighting */
         .mobile-nav-link.active {
-            background: rgba(201, 169, 98, 0.1);
-            color: #c9a962;
+            background: rgba(74, 124, 89, 0.1);
+            color: #53A445;
         }
         
         .mobile-nav-link.active > div {
-            background: #c9a962;
+            background: #53A445;
             color: white;
         }
 
@@ -159,7 +192,7 @@
         }
         
         .slider-dot.active {
-            background: #c9a962;
+            background: #53A445;
             transform: scale(1.2);
         }
         
@@ -182,8 +215,8 @@
         }
         
         .slider-arrow:hover {
-            background: rgba(201, 169, 98, 0.9);
-            border-color: #c9a962;
+            background: rgba(74, 124, 89, 0.9);
+            border-color: #53A445;
         }
         
         .slider-arrow i {
@@ -226,27 +259,21 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
-                <a href="index.html" class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center">
-                        <span class="text-white font-serif font-bold text-lg">M</span>
-                    </div>
-                    <div class="hidden sm:block">
-                        <h1 class="font-serif text-xl font-semibold text-white">Marula Fund Managers</h1>
-                        <p class="text-xs text-marula-gold tracking-wider">IMPACT DRIVEN CAPITAL</p>
-                    </div>
-                </a>
+                <a href="index.html" class="flex items-center">
+    <img src="images/header.png" alt="Marula Fund Managers" class="h-12 w-auto">
+</a>
                 
-                <!-- Desktop Menu - UNCHANGED -->
+                <!-- Desktop Menu -->
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="index.html" class="nav-link text-white hover:text-marula-gold transition-colors text-sm font-medium">Home</a>
                     <a href="about.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">About</a>
                     <a href="services.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Services</a>
                     <a href="investment-mandate.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Investment Mandate</a>
-                    <a href="contact.html" class="px-5 py-2 bg-marula-gold text-marula-dark font-medium rounded hover:bg-marula-gold-light transition-colors text-sm">Contact Us</a>
+                    <a href="contact.html" class="px-5 py-2 bg-marula-green text-white font-medium rounded hover:bg-marula-green-light transition-colors text-sm">Contact Us</a>
                 </div>
                 
-                <!-- Mobile Menu Button - UPDATED -->
-                <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-marula-gold transition-all">
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-marula-green transition-all">
                     <i class="fa-solid fa-bars text-lg"></i>
                 </button>
             </div>
@@ -260,16 +287,10 @@
     <div id="mobile-sidebar" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 transform translate-x-full transition-transform duration-300 ease-out shadow-2xl lg:hidden">
         <!-- Sidebar Header -->
         <div class="flex items-center justify-between p-6 border-b border-gray-100">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center">
-                    <span class="text-white font-serif font-bold text-lg">M</span>
-                </div>
-                <div>
-                    <h1 class="font-serif text-lg font-semibold text-marula-dark">Marula</h1>
-                    <p class="text-xs text-marula-gold tracking-wider">FUND MANAGERS</p>
-                </div>
-            </div>
-            <button id="mobile-sidebar-close" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-marula-gold hover:text-white transition-all">
+            <div class="flex items-center">
+    <img src="images/sidebar.png" alt="Marula Fund Managers" class="h-10 w-auto">
+</div>
+            <button id="mobile-sidebar-close" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-marula-green hover:text-white transition-all">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
         </div>
@@ -278,40 +299,40 @@
         <nav class="p-6">
             <ul class="space-y-1">
                 <li>
-                    <a href="index.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
-                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                    <a href="index.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
                             <i class="fa-solid fa-house text-lg"></i>
                         </div>
                         <span class="font-medium">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="about.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
-                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                    <a href="about.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
                             <i class="fa-solid fa-building text-lg"></i>
                         </div>
                         <span class="font-medium">About Us</span>
                     </a>
                 </li>
                 <li>
-                    <a href="services.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
-                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                    <a href="services.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
                             <i class="fa-solid fa-briefcase text-lg"></i>
                         </div>
                         <span class="font-medium">Services</span>
                     </a>
                 </li>
                 <li>
-                    <a href="investment-mandate.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
-                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                    <a href="investment-mandate.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
                             <i class="fa-solid fa-bullseye text-lg"></i>
                         </div>
                         <span class="font-medium">Investment Mandate</span>
                     </a>
                 </li>
                 <li>
-                    <a href="contact.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-gold/10 hover:text-marula-gold transition-all group">
-                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-gold group-hover:text-white transition-all">
+                    <a href="contact.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
                             <i class="fa-solid fa-envelope text-lg"></i>
                         </div>
                         <span class="font-medium">Contact Us</span>
@@ -323,11 +344,11 @@
         <!-- Sidebar Footer -->
         <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-100 bg-gray-50">
             <div class="space-y-3">
-                <a href="tel:+27721512953" class="flex items-center space-x-3 text-gray-600 hover:text-marula-gold transition-colors">
+                <a href="tel:+27721512953" class="flex items-center space-x-3 text-gray-600 hover:text-marula-green transition-colors">
                     <i class="fa-solid fa-phone text-sm"></i>
                     <span class="text-sm font-medium">+27 72 151 2953</span>
                 </a>
-                <a href="mailto:info@marulafund.com" class="flex items-center space-x-3 text-gray-600 hover:text-marula-gold transition-colors">
+                <a href="mailto:info@marulafund.com" class="flex items-center space-x-3 text-gray-600 hover:text-marula-green transition-colors">
                     <i class="fa-solid fa-envelope text-sm"></i>
                     <span class="text-sm font-medium break-all">info@marulafund.com</span>
                 </a>
@@ -335,10 +356,10 @@
             
             <!-- Social Links -->
             <div class="flex space-x-3 mt-6 pt-4 border-t border-gray-200">
-                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-green transition-colors">
                     <i class="fa-brands fa-linkedin text-lg"></i>
                 </a>
-                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-gold transition-colors">
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-green transition-colors">
                     <i class="fa-brands fa-x-twitter text-lg"></i>
                 </a>
             </div>
@@ -363,7 +384,7 @@
                         Mobilising and deploying institutional capital into early-stage technology ventures aligned with South Africa's development priorities.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="investment-mandate.html" class="px-8 py-4 bg-marula-gold text-marula-dark font-semibold rounded hover:bg-marula-gold-light transition-all hover-lift">Explore Our Mandate</a>
+                        <a href="investment-mandate.html" class="px-8 py-4 bg-marula-green text-white font-semibold rounded hover:bg-marula-green-light transition-all hover-lift">Explore Our Mandate</a>
                         <a href="contact.html" class="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-all">Get in Touch</a>
                     </div>
                 </div>
@@ -386,7 +407,7 @@
                         We operate as an intervention-based venture builder, integrating structured project preparation with institutional-grade governance.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="services.html" class="px-8 py-4 bg-marula-gold text-marula-dark font-semibold rounded hover:bg-marula-gold-light transition-all hover-lift">Our Services</a>
+                        <a href="services.html" class="px-8 py-4 bg-marula-green text-white font-semibold rounded hover:bg-marula-green-light transition-all hover-lift">Our Services</a>
                         <a href="about.html" class="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-all">Learn More</a>
                     </div>
                 </div>
@@ -409,7 +430,7 @@
                         Delivering capital and structured execution support across two distinct venture stages, from R1M seed funding to R10M expansion capital.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="investment-mandate.html" class="px-8 py-4 bg-marula-gold text-marula-dark font-semibold rounded hover:bg-marula-gold-light transition-all hover-lift">Investment Criteria</a>
+                        <a href="investment-mandate.html" class="px-8 py-4 bg-marula-green text-white font-semibold rounded hover:bg-marula-green-light transition-all hover-lift">Investment Criteria</a>
                         <a href="contact.html" class="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-all">Apply Now</a>
                     </div>
                 </div>
@@ -432,7 +453,7 @@
                         Prioritising black-owned and women-led startups, supporting township and rural entrepreneurs, driving youth inclusion across South Africa.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="about.html" class="px-8 py-4 bg-marula-gold text-marula-dark font-semibold rounded hover:bg-marula-gold-light transition-all hover-lift">Our Story</a>
+                        <a href="about.html" class="px-8 py-4 bg-marula-green text-white font-semibold rounded hover:bg-marula-green-light transition-all hover-lift">Our Story</a>
                         <a href="contact.html" class="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-all">Partner With Us</a>
                     </div>
                 </div>
@@ -466,13 +487,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="section-fade">
-                    <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Overview</p>
+                    <p class="text-marula-green text-sm tracking-[0.2em] uppercase mb-3 font-medium">Overview</p>
                     <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-6">Structured Execution.<br>Measurable Impact.</h2>
                     <p class="text-gray-600 leading-relaxed mb-6">
                         Marula Fund Managers is not positioned as a passive capital allocator. We operate as an <strong>intervention-based venture builder</strong> that integrates structured project preparation, institutional-grade governance, disciplined deal execution, and technology-enabled portfolio monitoring.
                     </p>
                     <div class="grid grid-cols-2 gap-6 mt-8">
-                        <div class="border-l-2 border-marula-gold pl-4">
+                        <div class="border-l-2 border-marula-green pl-4">
                             <p class="font-serif text-3xl font-semibold text-marula-dark">R100M</p>
                             <p class="text-sm text-gray-500">Innovation Fund</p>
                         </div>
@@ -480,7 +501,7 @@
                             <p class="font-serif text-3xl font-semibold text-marula-dark">3x-7x</p>
                             <p class="text-sm text-gray-500">Target Returns</p>
                         </div>
-                        <div class="border-l-2 border-marula-gold pl-4">
+                        <div class="border-l-2 border-marula-green pl-4">
                             <p class="font-serif text-3xl font-semibold text-marula-dark">20%</p>
                             <p class="text-sm text-gray-500">IRR Objective</p>
                         </div>
@@ -504,74 +525,222 @@
         </div>
     </section>
 
-    <!-- Investment Sectors -->
-    <section class="py-20 md:py-32 bg-marula-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 section-fade">
-                <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Investment Mandate</p>
-                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-4">Priority Sectors</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">We concentrate on ventures between product development and first commercialisation, bridging the capital gap where failure rates are highest.</p>
+    <!-- Investment Sectors - Redesigned with Multiple Logo Watermarks -->
+<section class="py-20 md:py-32 relative overflow-hidden">
+    <!-- Layered Background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-[#e8f5e4] via-[#f5f0d6] to-[#e8f5e4]"></div>
+    
+    <!-- Logo Watermark - Center Top (Partially Visible) -->
+    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[60%] w-[400px] h-[533px] opacity-[0.04] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Bottom Right (Rotated) -->
+    <div class="absolute bottom-0 right-0 transform translate-x-[20%] translate-y-[40%] rotate-[25deg] w-[350px] h-[467px] opacity-[0.03] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Top Left (Small, Rotated) -->
+    <div class="absolute top-[10%] left-0 transform -translate-x-[40%] -rotate-[20deg] w-[200px] h-[267px] opacity-[0.025] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Top Right (Medium, Rotated) -->
+    <div class="absolute top-[15%] right-0 transform translate-x-[35%] rotate-[18deg] w-[250px] h-[333px] opacity-[0.03] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Left Middle (Opposite Rotation) -->
+    <div class="absolute top-1/2 left-0 transform -translate-x-[30%] -translate-y-1/2 -rotate-[15deg] w-[300px] h-[400px] opacity-[0.025] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Right Middle (Rotated) -->
+    <div class="absolute top-[60%] right-0 transform translate-x-[25%] rotate-[30deg] w-[220px] h-[293px] opacity-[0.02] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Bottom Left (Small, Rotated) -->
+    <div class="absolute bottom-[20%] left-[5%] transform -rotate-[10deg] w-[180px] h-[240px] opacity-[0.02] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Center Area (Very Subtle) -->
+    <div class="absolute top-[40%] left-[30%] transform rotate-[8deg] w-[150px] h-[200px] opacity-[0.015] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Logo Watermark - Bottom Center (Partially Visible) -->
+    <div class="absolute bottom-0 left-[60%] transform translate-x-1/2 translate-y-[50%] rotate-[12deg] w-[280px] h-[373px] opacity-[0.03] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <!-- Subtle Pattern Overlay -->
+    <div class="absolute inset-0 opacity-[0.4]" style="background-image: radial-gradient(#53A445 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-12 section-fade">
+            <p class="text-[#53A445] text-sm tracking-[0.2em] uppercase mb-3 font-semibold">Investment Mandate</p>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">Priority Sectors</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">We concentrate on ventures between product development and first commercialisation, bridging the capital gap where failure rates are highest.</p>
+        </div>
+
+        <!-- Desktop: 2x4 Grid | Mobile: Horizontal Scroll -->
+        <div class="relative">
+            <!-- Mobile Scroll Container -->
+            <div class="flex md:grid md:grid-cols-4 gap-4 overflow-x-auto pb-4 md:pb-0 snap-x snap-mandatory scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
+                
+                <!-- Sector 1: Sustainable Energy -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#53A445] to-[#3d8a32] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-sun text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#D9C424]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#D9C424] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">Sustainable Energy</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Clean energy solutions and renewable technologies powering Africa's future.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#53A445] to-[#D9C424] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
+                <!-- Sector 2: Water Security -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#53A445] to-[#3d8a32] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-droplet text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#D9C424]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#D9C424] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">Water Security</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Water management and conservation technologies for sustainable resources.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#53A445] to-[#D9C424] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
+                <!-- Sector 3: Climate Resilience -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#53A445] to-[#3d8a32] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-leaf text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#D9C424]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#D9C424] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">Climate Resilience</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Climate adaptation and mitigation solutions for a sustainable tomorrow.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#53A445] to-[#D9C424] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
+                <!-- Sector 4: Bioeconomy -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#53A445] to-[#3d8a32] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-dna text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#D9C424]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#D9C424] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">Bioeconomy</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Sustainable biological resource utilisation and circular economy solutions.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#53A445] to-[#D9C424] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
+                <!-- Sector 5: Health Innovation -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#D9C424] to-[#b8a520] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-heart-pulse text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#53A445]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#53A445] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">Health Innovation</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Healthcare technology and medical solutions transforming African health.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#D9C424] to-[#53A445] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
+                <!-- Sector 6: High-Tech Industrial -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#D9C424] to-[#b8a520] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-industry text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#53A445]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#53A445] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">High-Tech Industrial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Advanced manufacturing and industrial tech for the 4th revolution.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#D9C424] to-[#53A445] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
+                <!-- Sector 7: ICT & Smart Systems -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#D9C424] to-[#b8a520] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-microchip text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#53A445]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#53A445] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">ICT & Smart Systems</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Digital transformation and smart technologies enabling connectivity.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#D9C424] to-[#53A445] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
+                <!-- Sector 8: Mining & Agriculture -->
+                <div class="flex-shrink-0 w-[280px] md:w-auto snap-center bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/50 hover:border-[#53A445]/30 section-fade">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-[#D9C424] to-[#b8a520] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-tractor text-2xl text-white"></i>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#53A445]/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-arrow-right text-[#53A445] text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-[#1a1a1a] mb-2 group-hover:text-[#53A445] transition-colors">Mining & Agriculture</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">IoT-enabled systems optimising Africa's primary sectors.</p>
+                    <div class="mt-4 h-1 w-12 bg-gradient-to-r from-[#D9C424] to-[#53A445] rounded-full group-hover:w-full transition-all duration-500"></div>
+                </div>
+
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-sun text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">Sustainable Energy</h3>
-                    <p class="text-sm text-gray-500">Clean energy solutions and renewable technologies</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-droplet text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">Water Security</h3>
-                    <p class="text-sm text-gray-500">Water management and conservation technologies</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-leaf text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">Climate Resilience</h3>
-                    <p class="text-sm text-gray-500">Climate adaptation and mitigation solutions</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-dna text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">Bioeconomy</h3>
-                    <p class="text-sm text-gray-500">Sustainable biological resource utilisation</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-heart-pulse text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">Health Innovation</h3>
-                    <p class="text-sm text-gray-500">Healthcare technology and medical solutions</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-industry text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">High-Tech Industrial</h3>
-                    <p class="text-sm text-gray-500">Advanced manufacturing and industrial tech</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-microchip text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">ICT & Smart Systems</h3>
-                    <p class="text-sm text-gray-500">Digital transformation and smart technologies</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover-lift section-fade cursor-pointer group">
-                    <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-marula-gold transition-colors">
-                        <i class="fa-solid fa-pickaxe text-xl text-marula-gold group-hover:text-white transition-colors"></i>
-                    </div>
-                    <h3 class="font-serif text-lg font-semibold text-marula-dark mb-2">Mining & Agriculture</h3>
-                    <p class="text-sm text-gray-500">IoT-enabled systems for primary sectors</p>
-                </div>
+
+            <!-- Mobile Scroll Indicator -->
+            <div class="flex md:hidden justify-center items-center mt-6 space-x-2">
+                <div class="w-2 h-2 rounded-full bg-[#53A445] animate-pulse"></div>
+                <span class="text-xs text-[#53A445]/70 uppercase tracking-wider font-medium">Swipe to explore</span>
+                <i class="fa-solid fa-hand-pointer text-[#D9C424] text-sm animate-bounce"></i>
             </div>
         </div>
-    </section>
+
+        <!-- Bottom CTA -->
+        <div class="mt-12 text-center section-fade">
+            <a href="investment-mandate.html" class="inline-flex items-center px-8 py-4 bg-[#1a1a1a] text-white rounded-full font-semibold hover:bg-[#53A445] transition-all duration-300 group shadow-lg hover:shadow-xl">
+                <span>View Full Investment Criteria</span>
+                <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
 
     <!-- Philosophy -->
     <section class="py-20 md:py-32 bg-marula-dark text-white">
@@ -582,23 +751,23 @@
                 <p class="text-white/70 max-w-2xl mx-auto">Ambition is common. Structured execution is not. Marula Fund Managers is built around execution.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="section-fade border-t-2 border-marula-gold pt-6">
-                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">01</span><i class="fa-solid fa-circle-check text-2xl text-marula-gold"></i></div>
+                <div class="section-fade border-t-2 border-marula-green pt-6">
+                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">01</span><i class="fa-solid fa-circle-check text-2xl text-marula-green"></i></div>
                     <h3 class="font-serif text-xl font-semibold mb-3">Capital Follows Readiness</h3>
                     <p class="text-white/60 text-sm leading-relaxed">We do not fund ideas. We fund validated execution pathways that survive technical scrutiny and governance review.</p>
                 </div>
-                <div class="section-fade border-t-2 border-marula-gold pt-6">
-                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">02</span><i class="fa-solid fa-shield-halved text-2xl text-marula-gold"></i></div>
+                <div class="section-fade border-t-2 border-marula-green pt-6">
+                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">02</span><i class="fa-solid fa-shield-halved text-2xl text-marula-green"></i></div>
                     <h3 class="font-serif text-xl font-semibold mb-3">Early Truth Protects Returns</h3>
                     <p class="text-white/60 text-sm leading-relaxed">We surface fatal flaws before scale. Revenue is stress tested. Costs are conservative. Risks are explicit.</p>
                 </div>
-                <div class="section-fade border-t-2 border-marula-gold pt-6">
-                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">03</span><i class="fa-solid fa-layer-group text-2xl text-marula-gold"></i></div>
+                <div class="section-fade border-t-2 border-marula-green pt-6">
+                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">03</span><i class="fa-solid fa-layer-group text-2xl text-marula-green"></i></div>
                     <h3 class="font-serif text-xl font-semibold mb-3">Structure Drives Performance</h3>
                     <p class="text-white/60 text-sm leading-relaxed">Risk is deliberately priced and allocated through disciplined instruments and milestone-based deployment.</p>
                 </div>
-                <div class="section-fade border-t-2 border-marula-gold pt-6">
-                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">04</span><i class="fa-solid fa-arrow-trend-up text-2xl text-marula-gold"></i></div>
+                <div class="section-fade border-t-2 border-marula-green pt-6">
+                    <div class="flex items-center mb-4"><span class="text-marula-gold font-serif text-4xl font-bold mr-3">04</span><i class="fa-solid fa-arrow-trend-up text-2xl text-marula-green"></i></div>
                     <h3 class="font-serif text-xl font-semibold mb-3">Execution Determines Value</h3>
                     <p class="text-white/60 text-sm leading-relaxed">Scaling is earned, not assumed. Operational capacity and delivery readiness are validated before expansion.</p>
                 </div>
@@ -614,12 +783,12 @@
                     <img src="images/homv.jpg" alt="Strategy Meeting" class="rounded-lg shadow-2xl w-full">
                 </div>
                 <div class="section-fade order-1 md:order-2">
-                    <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">Core Services</p>
+                    <p class="text-marula-green text-sm tracking-[0.2em] uppercase mb-3 font-medium">Core Services</p>
                     <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-6">Two-Stage Venture Support</h2>
                     <p class="text-gray-600 leading-relaxed mb-8">We deliver capital and structured execution support across two distinct venture stages, integrating capital, governance, preparation, and disciplined execution.</p>
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-marula-gold/10 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-rocket text-xl text-marula-gold"></i></div>
+                            <div class="w-12 h-12 bg-marula-green/10 rounded-lg flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-rocket text-xl text-marula-green"></i></div>
                             <div>
                                 <h3 class="font-serif text-lg font-semibold text-marula-dark mb-1">Stage 1: Start-Ups</h3>
                                 <p class="text-gray-500 text-sm">R1M - R5M investments • Proof of concept • Early validation • IP-backed ventures</p>
@@ -633,7 +802,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="services.html" class="inline-flex items-center mt-8 text-marula-gold font-medium hover:text-marula-dark transition-colors group">View All Services<i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i></a>
+                    <a href="services.html" class="inline-flex items-center mt-8 text-marula-green font-medium hover:text-marula-gold transition-colors group">View All Services<i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i></a>
                 </div>
             </div>
         </div>
@@ -649,9 +818,9 @@
                         <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mb-6">Impact is Not Marketing Language</h2>
                         <p class="text-white/70 leading-relaxed mb-8">Transformation is embedded in sourcing, evaluation, and performance. We prioritise black-owned and women-led startups, support township and rural entrepreneurs, and drive youth inclusion.</p>
                         <div class="grid grid-cols-2 gap-6">
-                            <div class="flex items-center space-x-3"><div class="w-10 h-10 bg-marula-gold/20 rounded-full flex items-center justify-center"><i class="fa-solid fa-users text-marula-gold"></i></div><span class="text-white text-sm">Black Owned Startups</span></div>
+                            <div class="flex items-center space-x-3"><div class="w-10 h-10 bg-marula-green/20 rounded-full flex items-center justify-center"><i class="fa-solid fa-users text-marula-green"></i></div><span class="text-white text-sm">Black Owned Startups</span></div>
                             <div class="flex items-center space-x-3"><div class="w-10 h-10 bg-marula-gold/20 rounded-full flex items-center justify-center"><i class="fa-solid fa-user-check text-marula-gold"></i></div><span class="text-white text-sm">Women Led Ventures</span></div>
-                            <div class="flex items-center space-x-3"><div class="w-10 h-10 bg-marula-gold/20 rounded-full flex items-center justify-center"><i class="fa-solid fa-location-dot text-marula-gold"></i></div><span class="text-white text-sm">Township & Rural</span></div>
+                            <div class="flex items-center space-x-3"><div class="w-10 h-10 bg-marula-green/20 rounded-full flex items-center justify-center"><i class="fa-solid fa-location-dot text-marula-green"></i></div><span class="text-white text-sm">Township & Rural</span></div>
                             <div class="flex items-center space-x-3"><div class="w-10 h-10 bg-marula-gold/20 rounded-full flex items-center justify-center"><i class="fa-solid fa-graduation-cap text-marula-gold"></i></div><span class="text-white text-sm">Youth Inclusion</span></div>
                         </div>
                     </div>
@@ -665,34 +834,59 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-20 md:py-32 bg-marula-gold">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center section-fade">
-            <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-4">Ready to Scale Your Venture?</h2>
-            <p class="text-marula-dark/80 text-lg mb-8">Let's work together to turn your objectives into measurable outcomes. Structured capital with governance increases survivability.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html" class="px-8 py-4 bg-marula-dark text-white font-semibold rounded hover:bg-gray-800 transition-all hover-lift">Schedule a Consultation</a>
-                <a href="about.html" class="px-8 py-4 border-2 border-marula-dark text-marula-dark font-semibold rounded hover:bg-marula-dark/10 transition-all">Learn More About Us</a>
-            </div>
+    <!-- CTA Section with Logo Watermarks -->
+<section class="py-20 md:py-32 bg-[#53A445] relative overflow-hidden">
+    <!-- Logo Watermarks - Scattered Throughout -->
+    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-[60%] w-[350px] h-[467px] opacity-[0.06] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <div class="absolute bottom-0 right-0 transform translate-x-[25%] translate-y-[35%] rotate-[20deg] w-[300px] h-[400px] opacity-[0.05] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <div class="absolute top-[20%] left-0 transform -translate-x-[35%] -rotate-[18deg] w-[180px] h-[240px] opacity-[0.04] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <div class="absolute top-[30%] right-0 transform translate-x-[30%] rotate-[15deg] w-[220px] h-[293px] opacity-[0.04] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <div class="absolute bottom-[15%] left-[10%] transform -rotate-[8deg] w-[150px] h-[200px] opacity-[0.03] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+    
+    <div class="absolute top-[50%] right-[20%] transform rotate-[25deg] w-[120px] h-[160px] opacity-[0.03] pointer-events-none">
+        <img src="images/icon.png" alt="" class="w-full h-full object-contain">
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center section-fade relative z-10">
+        <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mb-4">Ready to Scale Your Venture?</h2>
+        <p class="text-white/80 text-lg mb-8">Let's work together to turn your objectives into measurable outcomes. Structured capital with governance increases survivability.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="px-8 py-4 bg-white text-[#53A445] font-semibold rounded hover:bg-gray-100 transition-all hover-lift shadow-lg">Schedule a Consultation</a>
+            <a href="about.html" class="px-8 py-4 border-2 border-white text-white font-semibold rounded hover:bg-white/10 transition-all">Learn More About Us</a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-marula-dark text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 <div>
-                    <div class="flex items-center space-x-3 mb-6">
-                        <div class="w-10 h-10 bg-marula-gold rounded-lg flex items-center justify-center"><span class="text-white font-serif font-bold text-lg">M</span></div>
-                        <h3 class="font-serif text-lg font-semibold">Marula Fund Managers</h3>
-                    </div>
+                    <div class="flex items-center mb-6">
+    <img src="images/header.png" alt="Marula Fund Managers" class="h-10 w-auto">
+</div>
                     <p class="text-white/60 text-sm leading-relaxed mb-4">Impact-driven venture capital manager mobilising institutional capital into early-stage technology ventures.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-gold transition-colors"><i class="fa-brands fa-linkedin text-sm"></i></a>
-                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-gold transition-colors"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-green transition-colors"><i class="fa-brands fa-linkedin text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-green transition-colors"><i class="fa-brands fa-x-twitter text-sm"></i></a>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4 text-marula-gold">Quick Links</h4>
+                    <h4 class="font-semibold mb-4 text-marula-green">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="about.html" class="text-white/60 hover:text-marula-gold transition-colors">About Us</a></li>
                         <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Our Services</a></li>
@@ -701,16 +895,16 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4 text-marula-gold">Services</h4>
+                    <h4 class="font-semibold mb-4 text-marula-green">Services</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Start-Up Funding</a></li>
                         <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Business Expansion</a></li>
                         <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Project Development</a></li>
-                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Financial Modelling</a></li>
+                        <li><a href="services.html" class="texttext-white/60 hover:text-marula-gold transition-colors">Financial Modelling</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4 text-marula-gold">Contact Us</h4>
+                    <h4 class="font-semibold mb-4 text-marula-green">Contact Us</h4>
                     <ul class="space-y-3 text-sm">
                         <li class="flex items-start space-x-3"><i class="fa-solid fa-location-dot text-marula-gold mt-0.5 text-sm"></i><span class="text-white/60">286 Bryanston Dr, Bryanston, Sandton, 2191</span></li>
                         <li class="flex items-center space-x-3"><i class="fa-solid fa-phone text-marula-gold text-sm"></i><span class="text-white/60">+27 72 151 2953</span></li>
