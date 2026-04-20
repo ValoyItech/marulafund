@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Project | Marula Fund Managers</title>
+    <meta name="description" content="Register your commercial project for project preparation support and capital raising. Connect with institutional investors and funders.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'marula-dark': '#1a1a1a',
+                        'marula-green': '#53A445',
+                        'marula-green-light': '#5a8f6a',
+                        'marula-gold': '#D9C424',
+                        'marula-gold-light': '#e4c547',
+                        'marula-gray': '#2d2d2d',
+                        'marula-light': '#f5f5f0',
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%, rgba(45,45,45,0.85) 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #53A445 0%, #D9C424 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-scrolled {
+            background: rgba(26,26,26,0.98);
+            backdrop-filter: blur(10px);
+        }
+        .method-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .method-card:hover, .method-card.active {
+            border-color: #53A445;
+            background: rgba(83, 164, 69, 0.05);
+        }
+        .method-card.active {
+            box-shadow: 0 0 0 2px #53A445;
+        }
+        .nda-checkbox:checked + div {
+            background: rgba(83, 164, 69, 0.1);
+            border-color: #53A445;
+        }
+        .check-icon {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        .nda-checkbox:checked + div .check-icon {
+            opacity: 1;
+        }
+        /* Custom scrollbar for NDA text */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-marula-light text-marula-dark">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/header.png" alt="Marula Fund Managers" class="h-12 w-auto">
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-marula-gold transition-colors text-sm font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">About</a>
+                    <a href="services.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Services</a>
+                    <a href="project-registration.html" class="nav-link text-marula-gold transition-colors text-sm font-medium">Submit Project</a>
+                    <a href="investment-mandate.html" class="nav-link text-white/80 hover:text-marula-gold transition-colors text-sm font-medium">Investment Mandate</a>
+                    <a href="contact.html" class="px-5 py-2 bg-marula-green text-white font-medium rounded hover:bg-marula-green-light transition-colors text-sm">Contact Us</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-marula-green transition-all">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div id="mobile-sidebar-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden"></div>
+    <div id="mobile-sidebar" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white z-50 transform translate-x-full transition-transform duration-300 ease-out shadow-2xl lg:hidden">
+        <div class="flex items-center justify-between p-6 border-b border-gray-100">
+            <div class="flex items-center">
+                <img src="images/sidebar.png" alt="Marula Fund Managers" class="h-10 w-auto">
+            </div>
+            <button id="mobile-sidebar-close" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-marula-green hover:text-white transition-all">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+        <nav class="p-6">
+            <ul class="space-y-1">
+                <li>
+                    <a href="index.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
+                            <i class="fa-solid fa-house text-lg"></i>
+                        </div>
+                        <span class="font-medium">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
+                            <i class="fa-solid fa-building text-lg"></i>
+                        </div>
+                        <span class="font-medium">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
+                            <i class="fa-solid fa-briefcase text-lg"></i>
+                        </div>
+                        <span class="font-medium">Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="project-registration.html" class="mobile-nav-link active flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
+                            <i class="fa-solid fa-folder-plus text-lg"></i>
+                        </div>
+                        <span class="font-medium">Submit Project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="investment-mandate.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
+                            <i class="fa-solid fa-bullseye text-lg"></i>
+                        </div>
+                        <span class="font-medium">Investment Mandate</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="mobile-nav-link flex items-center space-x-4 px-4 py-4 rounded-xl text-gray-700 hover:bg-marula-green/10 hover:text-marula-green transition-all group">
+                        <div class="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center group-hover:bg-marula-green group-hover:text-white transition-all">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </div>
+                        <span class="font-medium">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-100 bg-gray-50">
+            <div class="space-y-3">
+                <a href="tel:+27721512953" class="flex items-center space-x-3 text-gray-600 hover:text-marula-green transition-colors">
+                    <i class="fa-solid fa-phone text-sm"></i>
+                    <span class="text-sm font-medium">+27 72 151 2953</span>
+                </a>
+                <a href="mailto:info@marulafund.com" class="flex items-center space-x-3 text-gray-600 hover:text-marula-green transition-colors">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                    <span class="text-sm font-medium break-all">info@marulafund.com</span>
+                </a>
+            </div>
+            <div class="flex space-x-3 mt-6 pt-4 border-t border-gray-200">
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-green transition-colors">
+                    <i class="fa-brands fa-linkedin text-lg"></i>
+                </a>
+                <a href="#" class="w-10 h-10 rounded-lg bg-marula-dark flex items-center justify-center text-white hover:bg-marula-green transition-colors">
+                    <i class="fa-brands fa-x-twitter text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="relative py-32 md:py-40 bg-marula-dark">
+        <div class="absolute inset-0">
+            <img src="images/services.jpg" alt="Project Registration" class="w-full h-full object-cover opacity-30">
+            <div class="gradient-overlay absolute inset-0"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-marula-gold text-sm tracking-[0.3em] uppercase mb-4 font-medium">Project Pipeline</p>
+            <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-semibold leading-tight mb-6">
+                Register Your <span class="text-gradient">Commercial Project</span>
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Submit your project for preparation support and capital raising. Join our pipeline of investment-ready ventures accessed by institutional funders and investors.
+            </p>
+        </div>
+    </section>
+
+    <!-- NDA Section -->
+    <section class="py-16 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="section-fade bg-marula-dark rounded-2xl p-8 md:p-12 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-marula-green/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                
+                <div class="relative z-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-marula-gold/20 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fa-solid fa-file-shield text-2xl text-marula-gold"></i>
+                        </div>
+                        <div>
+                            <h2 class="font-serif text-2xl font-semibold">Non-Disclosure Agreement</h2>
+                            <p class="text-white/60 text-sm">Protecting your intellectual property and project details</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 rounded-xl p-6 mb-6 border border-white/10">
+                        <h3 class="font-semibold text-marula-gold mb-3">Mutual Confidentiality Undertaking</h3>
+                        <div class="text-white/70 text-sm space-y-3 max-h-64 overflow-y-auto pr-2 custom-scrollbar">
+                            <p>By submitting your project to Marula Fund Managers, you acknowledge and agree to the following terms:</p>
+                            <ol class="list-decimal list-inside space-y-2 ml-2">
+                                <li><strong>Confidential Information:</strong> All project details, financial data, technical specifications, business plans, and proprietary information disclosed ("Confidential Information") shall be treated as strictly confidential.</li>
+                                <li><strong>Purpose:</strong> Confidential Information shall only be used for the purpose of evaluating potential investment, project preparation support, or capital raising assistance.</li>
+                                <li><strong>Non-Disclosure:</strong> Marula Fund Managers undertakes not to disclose, reproduce, distribute, or use Confidential Information for any purpose other than evaluation without prior written consent.</li>
+                                <li><strong>Standard of Care:</strong> Both parties shall exercise the same degree of care to protect Confidential Information as they use to protect their own proprietary information, but in no event less than reasonable care.</li>
+                                <li><strong>Exceptions:</strong> This undertaking does not apply to information that: (a) is or becomes publicly available through no breach; (b) was rightfully in possession prior to disclosure; (c) is rightfully obtained from a third party without restriction; or (d) is independently developed without use of Confidential Information.</li>
+                                <li><strong>Term:</strong> This obligation shall survive for a period of five (5) years from the date of submission.</li>
+                                <li><strong>Return of Information:</strong> Upon request, all physical and electronic copies of Confidential Information shall be returned or destroyed, except for archival copies maintained in standard backup procedures.</li>
+                                <li><strong>Remedies:</strong> Both parties acknowledge that breach may cause irreparable harm for which monetary damages would be inadequate, and consent to injunctive relief.</li>
+                            </ol>
+                            <p class="mt-4 text-marula-gold">By checking the box below, you confirm you have read, understood, and agree to be bound by these terms.</p>
+                        </div>
+                    </div>
+
+                    <label class="flex items-start space-x-3 cursor-pointer group">
+                        <input type="checkbox" id="nda-agree" class="nda-checkbox hidden">
+                        <div class="w-6 h-6 rounded border-2 border-white/30 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:border-marula-gold transition-colors">
+                            <i class="fa-solid fa-check text-white text-sm check-icon"></i>
+                        </div>
+                        <span class="text-white/80 text-sm">I agree to the Non-Disclosure Agreement and confirm I have authority to submit this project.</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Methods -->
+    <section class="py-20 md:py-32 bg-marula-light">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <p class="text-marula-green text-sm tracking-[0.2em] uppercase mb-3 font-medium">Choose Your Method</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark mb-4">How Would You Like to Submit?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We offer two secure submission channels. All methods are protected under the NDA.
+                </p>
+            </div>
+
+            <!-- Method Selection -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Method 1: Email with Attachments -->
+                <div class="method-card bg-white p-8 rounded-2xl border-2 border-gray-200 section-fade" onclick="selectMethod('email')">
+                    <div class="w-16 h-16 bg-marula-gold/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-envelope text-3xl text-marula-gold"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-center mb-3">Email Submission</h3>
+                    <p class="text-gray-600 text-sm text-center mb-6">
+                        Send your project documents directly to our secure pipeline email. Attach your pitch deck, financial model, and supporting files.
+                    </p>
+                    <div class="bg-marula-light rounded-lg p-4 mb-6 text-center">
+                        <code class="text-sm text-marula-dark font-medium">projects@marulafund.com</code>
+                    </div>
+                    <div class="flex flex-wrap gap-2 justify-center mb-6">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">PDF</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">Excel</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">PPT</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">Word</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600">ZIP</span>
+                    </div>
+                    <button class="w-full py-3 bg-marula-gold text-marula-dark rounded-lg font-medium hover:bg-marula-gold-light transition-colors">
+                        Select Email
+                    </button>
+                </div>
+
+                <!-- Method 2: Cloud Link -->
+                <div class="method-card bg-white p-8 rounded-2xl border-2 border-gray-200 section-fade" onclick="selectMethod('cloud')">
+                    <div class="w-16 h-16 bg-marula-dark/10 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-link text-3xl text-marula-dark"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-center mb-3">Share Cloud Link</h3>
+                    <p class="text-gray-600 text-sm text-center mb-6">
+                        Share a Google Drive, Dropbox, OneDrive, or Box link to your project folder. We'll request access securely.
+                    </p>
+                    <div class="flex justify-center space-x-4 mb-6">
+                        <i class="fa-brands fa-google-drive text-2xl text-gray-400"></i>
+                        <i class="fa-brands fa-dropbox text-2xl text-gray-400"></i>
+                        <i class="fa-brands fa-microsoft text-2xl text-gray-400"></i>
+                    </div>
+                    <div class="bg-marula-light rounded-lg p-4 mb-6 text-center">
+                        <span class="text-sm text-gray-600">Paste your shareable link</span>
+                    </div>
+                    <button class="w-full py-3 bg-marula-dark text-white rounded-lg font-medium hover:bg-gray-800 transition-colors">
+                        Select Cloud Link
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dynamic Submission Forms -->
+            <div id="submission-forms" class="max-w-2xl mx-auto">
+                
+                <!-- Email Form -->
+                <div id="form-email" class="hidden bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-marula-gold/10 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-envelope text-marula-gold"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-semibold">Email Submission</h3>
+                        </div>
+                        <button onclick="closeForm()" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-200 transition-all">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="bg-marula-green/10 rounded-xl p-6 mb-6 border border-marula-green/20">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <i class="fa-solid fa-envelope text-marula-green text-xl"></i>
+                            <span class="font-semibold text-marula-dark">Send to:</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-white rounded-lg p-3 border border-marula-green/30">
+                            <code class="text-lg font-medium text-marula-dark">projects@marulafund.com</code>
+                            <button onclick="copyEmail()" class="px-3 py-1 bg-marula-green/10 rounded text-marula-green text-sm font-medium hover:bg-marula-green/20 transition-colors flex items-center space-x-1">
+                                <i class="fa-regular fa-copy"></i>
+                                <span id="copy-text">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 mb-8">
+                        <h4 class="font-semibold text-gray-700 flex items-center">
+                            <i class="fa-solid fa-list-check text-marula-green mr-2"></i>
+                            Please include the following in your email:
+                        </h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-4 bg-marula-light rounded-lg p-4">
+                                <div class="w-8 h-8 bg-marula-green rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white text-sm font-bold">1</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-marula-dark">Subject Line</p>
+                                    <p class="text-gray-600 text-sm">"Project Submission: [Project Name] - [Sector]"</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-4 bg-marula-light rounded-lg p-4">
+                                <div class="w-8 h-8 bg-marula-green rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white text-sm font-bold">2</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-marula-dark">Email Body</p>
+                                    <p class="text-gray-600 text-sm">Brief description (max 300 words), funding required, current stage, and contact details</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-4 bg-marula-light rounded-lg p-4">
+                                <div class="w-8 h-8 bg-marula-green rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white text-sm font-bold">3</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-marula-dark">Attachments</p>
+                                    <p class="text-gray-600 text-sm">Pitch deck, business plan, financial model, technical specs, team CVs</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-4 bg-marula-light rounded-lg p-4">
+                                <div class="w-8 h-8 bg-marula-green rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-white text-sm font-bold">4</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-marula-dark">NDA Reference</p>
+                                    <p class="text-gray-600 text-sm">Include "NDA Agreed - [Your Name] - [Date]" in the email body</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6 flex items-start space-x-3">
+                        <i class="fa-solid fa-lightbulb text-yellow-600 mt-0.5"></i>
+                        <p class="text-sm text-yellow-800">
+                            <strong>Tip:</strong> If your files are too large for email, use the Cloud Link method instead.
+                        </p>
+                    </div>
+
+                    <a href="mailto:projects@marulafund.com?subject=Project Submission&body=PROJECT NAME:%0A%0ASECTOR:%0A%0AFUNDING REQUIRED:%0A%0ACURRENT STAGE:%0A%0ABRIEF DESCRIPTION:%0A%0ACONTACT NAME:%0A%0ACONTACT EMAIL:%0A%0ACOMPANY:%0A%0ANDA: Agreed" class="block w-full py-4 bg-marula-gold text-marula-dark font-semibold rounded-lg hover:bg-marula-gold-light transition-all text-center">
+                        <i class="fa-solid fa-envelope mr-2"></i>
+                        Open Email Client
+                    </a>
+                </div>
+
+                <!-- Cloud Link Form -->
+                <div id="form-cloud" class="hidden bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-marula-dark/10 rounded-lg flex items-center justify-center">
+                                <i class="fa-solid fa-link text-marula-dark"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-semibold">Cloud Link Submission</h3>
+                        </div>
+                        <button onclick="closeForm()" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:bg-gray-200 transition-all">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Shareable Link *</label>
+                            <div class="relative">
+                                <input type="url" id="cloud-link" class="w-full px-4 py-3 pl-12 rounded-lg border border-gray-300 focus:border-marula-green focus:ring-2 focus:ring-marula-green/20 outline-none transition-all" placeholder="https://drive.google.com/... or https://dropbox.com/...">
+                                <i class="fa-solid fa-link absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2">Ensure link permissions allow viewing. We'll request edit access after review.</p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
+                                <input type="text" id="cloud-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-marula-green focus:ring-2 focus:ring-marula-green/20 outline-none transition-all" placeholder="Full name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                                <input type="email" id="cloud-email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-marula-green focus:ring-2 focus:ring-marula-green/20 outline-none transition-all" placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Project Name *</label>
+                            <input type="text" id="cloud-project" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-marula-green focus:ring-2 focus:ring-marula-green/20 outline-none transition-all" placeholder="Project name">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Cloud Platform *</label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="platform" value="google" class="hidden peer" checked>
+                                    <div class="border-2 border-gray-200 rounded-lg p-4 text-center peer-checked:border-marula-green peer-checked:bg-marula-green/5 transition-all hover:border-marula-green/50">
+                                        <i class="fa-brands fa-google-drive text-2xl text-gray-400 peer-checked:text-marula-green mb-2 block"></i>
+                                        <p class="text-xs font-medium">Google Drive</p>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="platform" value="dropbox" class="hidden peer">
+                                    <div class="border-2 border-gray-200 rounded-lg p-4 text-center peer-checked:border-marula-green peer-checked:bg-marula-green/5 transition-all hover:border-marula-green/50">
+                                        <i class="fa-brands fa-dropbox text-2xl text-gray-400 peer-checked:text-marula-green mb-2 block"></i>
+                                        <p class="text-xs font-medium">Dropbox</p>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="platform" value="other" class="hidden peer">
+                                    <div class="border-2 border-gray-200 rounded-lg p-4 text-center peer-checked:border-marula-green peer-checked:bg-marula-green/5 transition-all hover:border-marula-green/50">
+                                        <i class="fa-solid fa-cloud text-2xl text-gray-400 peer-checked:text-marula-green mb-2 block"></i>
+                                        <p class="text-xs font-medium">Other</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Folder Contents Description</label>
+                            <textarea id="cloud-desc" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-marula-green focus:ring-2 focus:ring-marula-green/20 outline-none transition-all resize-none" placeholder="List the main documents included in the folder (e.g., Pitch deck v2, 3-year financial model, Technical specs, Team CVs)..."></textarea>
+                        </div>
+
+                        <div class="bg-marula-light rounded-lg p-4 flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-info text-marula-green mt-0.5"></i>
+                            <p class="text-sm text-gray-600">
+                                <strong>Recommended folder contents:</strong> Pitch deck, business plan, financial model, technical specifications, team CVs, and any existing term sheets or agreements.
+                            </p>
+                        </div>
+
+                        <button onclick="generateCloudEmail()" class="w-full py-4 bg-marula-dark text-white font-semibold rounded-lg hover:bg-gray-800 transition-all flex items-center justify-center space-x-2">
+                            <span>Generate Email</span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Investors Section -->
+    <section class="py-20 md:py-32 bg-marula-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none opacity-5">
+            <img src="images/icon.png" alt="" class="absolute top-1/2 left-1/2 w-[600px] h-[800px] -translate-x-1/2 -translate-y-1/2 object-contain">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="section-fade">
+                    <p class="text-marula-gold text-sm tracking-[0.2em] uppercase mb-3 font-medium">For Funders & Investors</p>
+                    <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-6">Access Our Project Pipeline</h2>
+                    <p class="text-white/70 leading-relaxed mb-8">
+                        Institutional investors and funders can subscribe to access our curated pipeline of commercial projects. Each project undergoes preliminary screening and NDA protection before inclusion.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-marula-green/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-filter text-marula-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Pre-Screened Opportunities</h4>
+                                <p class="text-white/60 text-sm">All projects reviewed for sector alignment, stage appropriateness, and documentation completeness.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-marula-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-file-shield text-marula-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">NDA-Protected Access</h4>
+                                <p class="text-white/60 text-sm">Confidentiality agreements in place for all pipeline projects. Secure data room access available.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-marula-green/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-bell text-marula-green"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Alert Preferences</h4>
+                                <p class="text-white/60 text-sm">Set filters for sector, stage, and ticket size. Receive notifications when matching projects register.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="mailto:investors@marulafund.com?subject=Pipeline Access Request" class="inline-flex items-center px-8 py-4 bg-marula-green text-white font-semibold rounded hover:bg-marula-green-light transition-all">
+                        Request Pipeline Access
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="section-fade">
+                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                        <h3 class="font-serif text-xl font-semibold mb-6">Pipeline Statistics</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center p-4 bg-white/5 rounded-lg">
+                                <p class="font-serif text-3xl font-bold text-marula-gold">47</p>
+                                <p class="text-white/60 text-sm mt-1">Active Projects</p>
+                            </div>
+                            <div class="text-center p-4 bg-white/5 rounded-lg">
+                                <p class="font-serif text-3xl font-bold text-marula-gold">R2.1B</p>
+                                <p class="text-white/60 text-sm mt-1">Total Pipeline Value</p>
+                            </div>
+                            <div class="text-center p-4 bg-white/5 rounded-lg">
+                                <p class="font-serif text-3xl font-bold text-marula-gold">12</p>
+                                <p class="text-white/60 text-sm mt-1">Sectors Covered</p>
+                            </div>
+                            <div class="text-center p-4 bg-white/5 rounded-lg">
+                                <p class="font-serif text-3xl font-bold text-marula-gold">8</p>
+                                <p class="text-white/60 text-sm mt-1">Active Funders</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-white/10">
+                            <p class="text-white/40 text-xs text-center">
+                                *Statistics updated monthly. Full access requires subscription verification.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 section-fade">
+                <p class="text-marula-green text-sm tracking-[0.2em] uppercase mb-3 font-medium">Common Questions</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-marula-dark">Submission FAQ</h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-marula-light rounded-xl overflow-hidden section-fade">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-semibold text-marula-dark">What happens after I submit my project?</span>
+                        <span class="transition-transform group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-marula-green"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        Upon submission, you receive an automatic acknowledgment within 24 hours. Our team conducts an initial screening for sector alignment, stage appropriateness, and documentation completeness within 5 business days. Eligible projects are invited to a preliminary call, following which we provide feedback or proceed to detailed due diligence.
+                    </div>
+                </details>
+
+                <details class="group bg-marula-light rounded-xl overflow-hidden section-fade">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-semibold text-marula-dark">Is my project information secure?</span>
+                        <span class="transition-transform group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-marula-green"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        Absolutely. All submissions are covered by our Mutual NDA (linked above). We employ encrypted storage, access controls, and never share project details with third parties without explicit consent. Investor access to pipeline data requires separate NDA execution and subscription verification.
+                    </div>
+                </details>
+
+                <details class="group bg-marula-light rounded-xl overflow-hidden section-fade">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-semibold text-marula-dark">Can I submit multiple projects?</span>
+                        <span class="transition-transform group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-marula-green"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        Yes. Each project requires a separate submission to ensure proper tracking and evaluation. However, if submitting related ventures or portfolio companies, please mention this in your submission email or description for coordinated review.
+                    </div>
+                </details>
+
+                <details class="group bg-marula-light rounded-xl overflow-hidden section-fade">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-semibold text-marula-dark">What if my project is early-stage with no revenue?</span>
+                        <span class="transition-transform group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-marula-green"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        We accept pre-revenue ventures at proof-of-concept or pilot stage, particularly in priority sectors. The key requirement is demonstrable technical validation, clear market need, and a credible path to commercialisation. Our Stage 1 funding (R1M-R5M) is specifically designed for such ventures.
+                    </div>
+                </details>
+
+                <details class="group bg-marula-light rounded-xl overflow-hidden section-fade">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                        <span class="font-semibold text-marula-dark">How do I update my submission with new information?</span>
+                        <span class="transition-transform group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-marula-green"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed">
+                        Reply to your acknowledgment email with updates, or send a follow-up to projects@marulafund.com referencing your original submission date and project name. For significant updates (new financials, term sheets, etc.), we recommend submitting a fresh version with "UPDATE" in the subject line.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-marula-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="images/header.png" alt="Marula Fund Managers" class="h-10 w-auto">
+                    </div>
+                    <p class="text-white/60 text-sm leading-relaxed mb-4">Impact-driven venture capital manager mobilising institutional capital into early-stage technology ventures.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-green transition-colors"><i class="fa-brands fa-linkedin text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 bg-white/10 rounded flex items-center justify-center hover:bg-marula-green transition-colors"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-green">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-white/60 hover:text-marula-gold transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Our Services</a></li>
+                        <li><a href="project-registration.html" class="text-white/60 hover:text-marula-gold transition-colors">Submit Project</a></li>
+                        <li><a href="investment-mandate.html" class="text-white/60 hover:text-marula-gold transition-colors">Investment Mandate</a></li>
+                        <li><a href="contact.html" class="text-white/60 hover:text-marula-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-green">Project Pipeline</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="project-registration.html" class="text-white/60 hover:text-marula-gold transition-colors">Register Project</a></li>
+                        <li><a href="mailto:investors@marulafund.com" class="text-white/60 hover:text-marula-gold transition-colors">Investor Access</a></li>
+                        <li><a href="investment-mandate.html" class="text-white/60 hover:text-marula-gold transition-colors">Pipeline Criteria</a></li>
+                        <li><a href="services.html" class="text-white/60 hover:text-marula-gold transition-colors">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-marula-green">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start space-x-3"><i class="fa-solid fa-location-dot text-marula-gold mt-0.5 text-sm"></i><span class="text-white/60">286 Bryanston Dr, Bryanston, Sandton, 2191</span></li>
+                        <li class="flex items-center space-x-3"><i class="fa-solid fa-phone text-marula-gold text-sm"></i><span class="text-white/60">+27 72 151 2953</span></li>
+                        <li class="flex items-center space-x-3"><i class="fa-solid fa-envelope text-marula-gold text-sm"></i><span class="text-white/60">info@marulafund.com</span></li>
+                        <li class="flex items-center space-x-3"><i class="fa-solid fa-envelope text-marula-gold text-sm"></i><span class="text-white/60">projects@marulafund.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-white/40 text-sm">© 2026 Marula Fund Managers. All rights reserved.</p>
+                <p class="text-white/40 text-sm mt-2 md:mt-0">100% Black Owned • FSP Licensed</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // NDA Checkbox Logic
+        const ndaCheckbox = document.getElementById('nda-agree');
+        const methodCards = document.querySelectorAll('.method-card');
+
+        ndaCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                methodCards.forEach(card => {
+                    card.style.opacity = '1';
+                    card.style.pointerEvents = 'auto';
+                });
+            } else {
+                closeForm();
+                methodCards.forEach(card => {
+                    card.style.opacity = '0.5';
+                    card.style.pointerEvents = 'none';
+                });
+            }
+        });
+
+        // Initialize with disabled state
+        methodCards.forEach(card => {
+            card.style.opacity = '0.5';
+            card.style.pointerEvents = 'none';
+            card.style.transition = 'opacity 0.3s ease';
+        });
+
+        // Method Selection
+        function selectMethod(method) {
+            if (!ndaCheckbox.checked) {
+                // Shake the NDA section to draw attention
+                const ndaSection = document.querySelector('.bg-marula-dark.rounded-2xl');
+                ndaSection.style.animation = 'shake 0.5s ease';
+                setTimeout(() => ndaSection.style.animation = '', 500);
+                return;
+            }
+
+            // Hide all forms
+            document.querySelectorAll('#submission-forms > div').forEach(form => {
+                form.classList.add('hidden');
+            });
+
+            // Remove active class from all cards
+            document.querySelectorAll('.method-card').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            // Show selected form and activate card
+            document.getElementById('form-' + method).classList.remove('hidden');
+            event.currentTarget.classList.add('active');
+
+            // Scroll to form
+            setTimeout(() => {
+                document.getElementById('submission-forms').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+
+        function closeForm() {
+            document.querySelectorAll('#submission-forms > div').forEach(form => {
+                form.classList.add('hidden');
+            });
+            document.querySelectorAll('.method-card').forEach(card => {
+                card.classList.remove('active');
+            });
+        }
+
+        // Copy Email
+        function copyEmail() {
+            navigator.clipboard.writeText('projects@marulafund.com').then(() => {
+                const copyText = document.getElementById('copy-text');
+                const originalText = copyText.textContent;
+                copyText.textContent = 'Copied!';
+                setTimeout(() => {
+                    copyText.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        // Generate Cloud Email
+        function generateCloudEmail() {
+            const link = document.getElementById('cloud-link').value;
+            const name = document.getElementById('cloud-name').value;
+            const email = document.getElementById('cloud-email').value;
+            const project = document.getElementById('cloud-project').value;
+            const platform = document.querySelector('input[name="platform"]:checked').value;
+            const desc = document.getElementById('cloud-desc').value;
+
+            if (!link || !name || !email || !project) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            const platformNames = {
+                'google': 'Google Drive',
+                'dropbox': 'Dropbox',
+                'other': 'Cloud Storage'
+            };
+
+            const subject = encodeURIComponent(`Project Submission: ${project} - Cloud Link`);
+            const body = encodeURIComponent(
+                `PROJECT NAME: ${project}\n\n` +
+                `CLOUD LINK: ${link}\n` +
+                `PLATFORM: ${platformNames[platform]}\n\n` +
+                `SUBMITTED BY: ${name}\n` +
+                `EMAIL: ${email}\n\n` +
+                `FOLDER CONTENTS:\n${desc || 'See shared folder'}\n\n` +
+                `NDA: Agreed by ${name} on ${new Date().toLocaleDateString()}`
+            );
+
+            window.location.href = `mailto:projects@marulafund.com?subject=${subject}&body=${body}`;
+        }
+
+        // Add shake animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-10px); }
+                75% { transform: translateX(10px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Mobile Sidebar
+        const mobileSidebar = document.getElementById('mobile-sidebar');
+        const mobileSidebarOverlay = document.getElementById('mobile-sidebar-overlay');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileSidebarClose = document.getElementById('mobile-sidebar-close');
+
+        function openMobileSidebar() {
+            mobileSidebar.classList.remove('translate-x-full');
+            mobileSidebarOverlay.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileSidebar() {
+            mobileSidebar.classList.add('translate-x-full');
+            mobileSidebarOverlay.classList.add('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileSidebar);
+        mobileSidebarClose.addEventListener('click', closeMobileSidebar);
+        mobileSidebarOverlay.addEventListener('click', closeMobileSidebar);
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileSidebar);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !mobileSidebar.classList.contains('translate-x-full')) {
+                closeMobileSidebar();
+            }
+        });
+
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        document.querySelectorAll('.section-fade').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
