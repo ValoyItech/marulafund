@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transactions | Marula Fund Managers</title>
+
+<meta name="title" content="Transactions | Marula Fund Managers">
+<meta name="description" content="Learn about Marula Fund Managers' investment transactions, acquisitions, funding activities, partnerships, and strategic deal execution across Africa.">
+<meta name="keywords" content="Investment transactions, acquisitions, funding deals, partnerships, capital investments, Marula Fund Managers">
+
+<link rel="canonical" href="https://marulafund.com/transactions.html">
+
+<meta property="og:title" content="Transactions | Marula Fund Managers">
+<meta property="og:description" content="Showcasing strategic transactions, partnerships, and investment activities.">
+<meta property="og:url" content="https://marulafund.com/transactions.html">
+
+<meta name="twitter:title" content="Transactions | Marula Fund Managers">
+<meta name="twitter:description" content="Explore our investment transactions and strategic business partnerships.">
+
+
+
+
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marula Fund Managers">
+<meta property="og:image" content="https://marulafund.com/images/logo.png">
+<meta property="og:image:secure_url" content="https://marulafund.com/images/logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Marula Fund Managers Logo">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marulafund.com/images/logo.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marula: {
+              green: '#2E7D32',
+              dark: '#0F1F0F',
+              darker: '#0A140A',
+              gold: '#D4AF37',
+              goldLight: '#F4D03F',
+              accent: '#4CAF50',
+              surface: 'rgba(255,255,255,0.03)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #0A140A; color: #f5f5f5; overflow-x: hidden; }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 50%, #D4AF37 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .nav-glass {
+      background: rgba(15, 31, 15, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 2px solid rgba(46, 125, 50, 0.3);
+    }
+    .gold-line {
+      height: 2px; background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    }
+    .brand-accent-bar {
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, #2E7D32, #D4AF37);
+      border-radius: 2px;
+    }
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .tx-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(46, 125, 50, 0.15);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .tx-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 175, 55, 0.3);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .tx-card-img {
+      height: 180px;
+      overflow: hidden;
+    }
+    .tx-card-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .tx-card:hover .tx-card-img img { transform: scale(1.08); }
+    .tx-status {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px; border-radius: 999px;
+      font-size: 0.7rem; font-weight: 600;
+    }
+    .tx-status-funded {
+      background: rgba(46, 125, 50, 0.2); color: #4CAF50;
+      border: 1px solid rgba(46, 125, 50, 0.3);
+    }
+    .tx-status-advanced {
+      background: rgba(212, 175, 55, 0.15); color: #D4AF37;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .tx-status-ongoing {
+      background: rgba(46, 125, 50, 0.15); color: #81C784;
+      border: 1px solid rgba(46, 125, 50, 0.25);
+    }
+    .tx-status-progress {
+      background: rgba(76, 175, 80, 0.12); color: #66BB6A;
+      border: 1px solid rgba(76, 175, 80, 0.25);
+    }
+    .tx-status-services {
+      background: rgba(100, 100, 100, 0.15); color: #B0BEC5;
+      border: 1px solid rgba(100, 100, 100, 0.3);
+    }
+    .section-bg-image {
+      position: relative; background-size: cover; background-position: center; background-attachment: fixed;
+    }
+    .section-bg-image::before {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(10, 20, 10, 0.92); z-index: 0;
+    }
+    .section-bg-image > * { position: relative; z-index: 1; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0A140A; }
+    ::-webkit-scrollbar-thumb { background: #2E7D32; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+    /* Prevent horizontal scroll on mobile */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix nav overflow */
+#navbar {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+#navbar .max-w-7xl {
+  max-width: 100%;
+}
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-3 md:py-4 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between w-full">
+      <a href="index.html" class="flex items-center gap-3 group shrink-0">
+        <img src="images/header.png" alt="Marula" class="h-10 sm:h-12 md:h-16 w-auto drop-shadow-lg group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] transition-all">
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Home</a>
+        <a href="about.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">About</a>
+        <a href="platform.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Platform</a>
+        <a href="services.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Services</a>
+        <a href="portfolio.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Portfolio</a>
+        <a href="transactions.html" class="text-sm font-medium text-marula-gold border-b-2 border-marula-gold pb-1">Transactions</a>
+        <a href="contact.html" class="px-5 py-2.5 bg-marula-gold text-marula-darker text-sm font-semibold rounded hover:bg-marula-goldLight transition-all hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]">Contact</a>
+      </div>
+      <button id="menuBtn" class="lg:hidden text-2xl text-white hover:text-marula-gold transition-colors shrink-0 ml-4">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] bg-marula-darker/98 backdrop-blur-xl lg:hidden flex flex-col items-center justify-center gap-8">
+    <button id="closeMenu" class="absolute top-6 right-6 text-3xl text-gray-400 hover:text-marula-gold"><i class="fas fa-times"></i></button>
+    <a href="index.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Home</a>
+    <a href="about.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">About</a>
+    <a href="platform.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Platform</a>
+    <a href="services.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Services</a>
+    <a href="portfolio.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Portfolio</a>
+    <a href="transactions.html" class="text-2xl font-serif text-marula-gold">Transactions</a>
+    <a href="contact.html" class="px-8 py-3 bg-marula-gold text-marula-darker font-semibold rounded mt-4">Contact Us</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="relative min-h-[50vh] md:min-h-[60vh] w-full overflow-hidden flex items-center justify-center">
+    <div class="absolute inset-0 bg-[url('images/trans.jpg')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-marula-darker/90 via-marula-dark/85 to-marula-darker"></div>
+    <div class="relative z-10 text-center px-4 md:px-6 max-w-4xl mx-auto pt-24 md:pt-32 pb-16 md:pb-20">
+      <p class="text-marula-gold text-sm tracking-[0.2em] uppercase font-medium mb-4" data-aos="fade-up">Project Pipeline</p>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight" data-aos="fade-up" data-aos-delay="100">Selected Transactions</h1>
+      <div class="gold-line w-16 md:w-24 mx-auto mb-6" data-aos="fade-up" data-aos-delay="200"></div>
+      <p class="text-gray-300 text-base md:text-xl max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+        The following selected projects are drawn from the Marula pipeline. Values are presented as approximate where disclosed.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pipeline Value Highlight -->
+  <section class="py-16 md:py-20 bg-marula-dark">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" data-aos="fade-up">
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl p-6 text-center">
+          <p class="text-3xl md:text-4xl font-serif font-bold gold-gradient-text">R317m+</p>
+          <p class="text-gray-400 text-sm mt-2">Disclosed Pipeline Value</p>
+        </div>
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl p-6 text-center">
+          <p class="text-3xl md:text-4xl font-serif font-bold gold-gradient-text">6</p>
+          <p class="text-gray-400 text-sm mt-2">Active Projects</p>
+        </div>
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl p-6 text-center">
+          <p class="text-3xl md:text-4xl font-serif font-bold gold-gradient-text">5</p>
+          <p class="text-gray-400 text-sm mt-2">Sectors Covered</p>
+        </div>
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl p-6 text-center">
+          <p class="text-3xl md:text-4xl font-serif font-bold gold-gradient-text">R78m</p>
+          <p class="text-gray-400 text-sm mt-2">Funding Secured (Chambo)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desktop Table -->
+  <section class="py-12 md:py-16 bg-marula-darker">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="hidden md:block overflow-x-auto" data-aos="fade-up">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b-2 border-marula-green/30">
+              <th class="pb-4 text-marula-gold text-sm font-semibold uppercase tracking-wider">Project</th>
+              <th class="pb-4 text-marula-gold text-sm font-semibold uppercase tracking-wider">Value</th>
+              <th class="pb-4 text-marula-gold text-sm font-semibold uppercase tracking-wider">Sector</th>
+              <th class="pb-4 text-marula-gold text-sm font-semibold uppercase tracking-wider">Marula Role</th>
+              <th class="pb-4 text-marula-gold text-sm font-semibold uppercase tracking-wider">Status</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-300">
+            <tr class="border-b border-white/5 hover:bg-marula-green/5 transition-colors">
+              <td class="py-5 font-medium text-white">Chambo Fish & Fish Feed</td>
+              <td class="py-5 text-marula-gold font-semibold">~R148m</td>
+              <td class="py-5">Aquaculture</td>
+              <td class="py-5 text-sm">Funding mobilisation, project packaging and financial modelling</td>
+              <td class="py-5"><span class="tx-status tx-status-funded"><span class="w-1.5 h-1.5 rounded-full bg-marula-accent"></span>Funding Secured</span></td>
+            </tr>
+            <tr class="border-b border-white/5 hover:bg-marula-green/5 transition-colors">
+              <td class="py-5 font-medium text-white">KH All Sorts Fleurhof Gold</td>
+              <td class="py-5 text-marula-gold font-semibold">~R113m</td>
+              <td class="py-5">Mining</td>
+              <td class="py-5 text-sm">Financing strategy, project structuring and investor engagement</td>
+              <td class="py-5"><span class="tx-status tx-status-advanced"><span class="w-1.5 h-1.5 rounded-full bg-marula-gold"></span>Advanced Stage</span></td>
+            </tr>
+            <tr class="border-b border-white/5 hover:bg-marula-green/5 transition-colors">
+              <td class="py-5 font-medium text-white">AlgoAtWork Gauteng 4IR</td>
+              <td class="py-5 text-marula-gold font-semibold">~R46m</td>
+              <td class="py-5">Technology</td>
+              <td class="py-5 text-sm">Funding mobilisation and project structuring</td>
+              <td class="py-5"><span class="tx-status tx-status-ongoing"><span class="w-1.5 h-1.5 rounded-full bg-marula-accent"></span>Ongoing</span></td>
+            </tr>
+            <tr class="border-b border-white/5 hover:bg-marula-green/5 transition-colors">
+              <td class="py-5 font-medium text-white">Tamatie E Bose Hemp</td>
+              <td class="py-5 text-marula-gold font-semibold">~R10m</td>
+              <td class="py-5">Agriculture</td>
+              <td class="py-5 text-sm">Project preparation, blended finance structuring and funding mobilisation</td>
+              <td class="py-5"><span class="tx-status tx-status-progress"><span class="w-1.5 h-1.5 rounded-full bg-marula-accent"></span>Farming Progress</span></td>
+            </tr>
+            <tr class="border-b border-white/5 hover:bg-marula-green/5 transition-colors">
+              <td class="py-5 font-medium text-white">Kentse Security Services</td>
+              <td class="py-5 text-marula-gold font-semibold">Various</td>
+              <td class="py-5">Security</td>
+              <td class="py-5 text-sm">Portfolio management and operational support</td>
+              <td class="py-5"><span class="tx-status tx-status-services"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>Services Ongoing</span></td>
+            </tr>
+            <tr class="border-b border-white/5 hover:bg-marula-green/5 transition-colors">
+              <td class="py-5 font-medium text-white">OceansAhead</td>
+              <td class="py-5 text-marula-gold font-semibold">Various</td>
+              <td class="py-5">Infrastructure</td>
+              <td class="py-5 text-sm">Project management and capacity building</td>
+              <td class="py-5"><span class="tx-status tx-status-services"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>Services Ongoing</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Cards -->
+      <div class="md:hidden grid gap-4" data-aos="fade-up">
+        <div class="tx-card">
+          <div class="tx-card-img"><img src="images/chambo.jpg" alt="Chambo"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div><h3 class="text-white font-semibold text-base">Chambo Fish & Fish Feed</h3><p class="text-gray-500 text-sm">Aquaculture</p></div>
+              <span class="tx-status tx-status-funded shrink-0 ml-2"><span class="w-1.5 h-1.5 rounded-full bg-marula-accent"></span>Funding Secured</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-3">Funding mobilisation, project packaging and financial modelling</p>
+            <div class="flex items-center gap-2 pt-3 border-t border-white/5"><i class="fas fa-coins text-marula-gold text-sm"></i><span class="text-marula-gold font-bold">~R148m</span></div>
+          </div>
+        </div>
+        <div class="tx-card">
+          <div class="tx-card-img"><img src="images/mine.jpg" alt="KH All Sorts"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div><h3 class="text-white font-semibold text-base">KH All Sorts Fleurhof Gold</h3><p class="text-gray-500 text-sm">Mining</p></div>
+              <span class="tx-status tx-status-advanced shrink-0 ml-2"><span class="w-1.5 h-1.5 rounded-full bg-marula-gold"></span>Advanced Stage</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-3">Financing strategy, project structuring and investor engagement</p>
+            <div class="flex items-center gap-2 pt-3 border-t border-white/5"><i class="fas fa-coins text-marula-gold text-sm"></i><span class="text-marula-gold font-bold">~R113m</span></div>
+          </div>
+        </div>
+        <div class="tx-card">
+          <div class="tx-card-img"><img src="images/tech.jpg" alt="AlgoAtWork"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div><h3 class="text-white font-semibold text-base">AlgoAtWork Gauteng 4IR</h3><p class="text-gray-500 text-sm">Technology</p></div>
+              <span class="tx-status tx-status-ongoing shrink-0 ml-2"><span class="w-1.5 h-1.5 rounded-full bg-marula-accent"></span>Ongoing</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-3">Funding mobilisation and project structuring</p>
+            <div class="flex items-center gap-2 pt-3 border-t border-white/5"><i class="fas fa-coins text-marula-gold text-sm"></i><span class="text-marula-gold font-bold">~R46m</span></div>
+          </div>
+        </div>
+        <div class="tx-card">
+          <div class="tx-card-img"><img src="images/agri.jpg" alt="Tamatie"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div><h3 class="text-white font-semibold text-base">Tamatie E Bose Hemp</h3><p class="text-gray-500 text-sm">Agriculture</p></div>
+              <span class="tx-status tx-status-progress shrink-0 ml-2"><span class="w-1.5 h-1.5 rounded-full bg-marula-accent"></span>Farming Progress</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-3">Project preparation, blended finance structuring and funding mobilisation</p>
+            <div class="flex items-center gap-2 pt-3 border-t border-white/5"><i class="fas fa-coins text-marula-gold text-sm"></i><span class="text-marula-gold font-bold">~R10m</span></div>
+          </div>
+        </div>
+        <div class="tx-card">
+          <div class="tx-card-img"><img src="images/security.jpg" alt="Kentse"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div><h3 class="text-white font-semibold text-base">Kentse Security Services</h3><p class="text-gray-500 text-sm">Security</p></div>
+              <span class="tx-status tx-status-services shrink-0 ml-2"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>Ongoing</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-3">Portfolio management and operational support</p>
+            <div class="flex items-center gap-2 pt-3 border-t border-white/5"><i class="fas fa-coins text-marula-gold text-sm"></i><span class="text-marula-gold font-bold">Various</span></div>
+          </div>
+        </div>
+        <div class="tx-card">
+          <div class="tx-card-img"><img src="images/core1.jpg" alt="OceansAhead"></div>
+          <div class="p-5">
+            <div class="flex items-start justify-between mb-3">
+              <div><h3 class="text-white font-semibold text-base">OceansAhead</h3><p class="text-gray-500 text-sm">Infrastructure</p></div>
+              <span class="tx-status tx-status-services shrink-0 ml-2"><span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>Ongoing</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-3">Project management and capacity building</p>
+            <div class="flex items-center gap-2 pt-3 border-t border-white/5"><i class="fas fa-coins text-marula-gold text-sm"></i><span class="text-marula-gold font-bold">Various</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Project Highlights -->
+  <section class="py-20 md:py-24 relative section-bg-image" style="background-image: url('images/hero4.jpg');">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+        <p class="text-marula-gold text-sm tracking-[0.2em] uppercase font-medium mb-4">Deep Dive</p>
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Strategic Project Highlights</h2>
+        <div class="brand-accent-bar mx-auto"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+        <!-- Chambo -->
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl overflow-hidden hover:border-marula-gold/30 transition-all" data-aos="fade-up" data-aos-delay="0">
+          <div class="h-48 overflow-hidden"><img src="images/cham.jpg" class="w-full h-full object-cover" alt="Chambo"></div>
+          <div class="p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="sector-tag bg-marula-green/15 text-marula-accent border border-marula-green/25 text-xs">Aquaculture</span>
+              <span class="tx-status tx-status-funded text-xs">Funding Secured</span>
+            </div>
+            <h3 class="text-white font-bold text-xl mb-2">Chambo Aquafish Group</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">Funding interest secured from Land Bank and NEF. University of Limpopo partnership on fish feed development.</p>
+            <div class="bg-marula-darker rounded-lg p-4 border border-marula-green/10">
+              <p class="text-gray-300 text-sm"><span class="text-marula-gold font-semibold">Strategic Logic:</span> Bankability through funder engagement and technical partnerships.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- KH All Sorts -->
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl overflow-hidden hover:border-marula-gold/30 transition-all" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 overflow-hidden"><img src="images/mine.jpg" class="w-full h-full object-cover" alt="KH All Sorts"></div>
+          <div class="p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="sector-tag bg-marula-green/15 text-marula-accent border border-marula-green/25 text-xs">Mining</span>
+              <span class="tx-status tx-status-advanced text-xs">Advanced Stage</span>
+            </div>
+            <h3 class="text-white font-bold text-xl mb-2">KH All Sorts Umoja Gold</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">Mining permit held. R64m funding commitment secured. Offtake with Sibanye at advanced stage.</p>
+            <div class="bg-marula-darker rounded-lg p-4 border border-marula-green/10">
+              <p class="text-gray-300 text-sm"><span class="text-marula-gold font-semibold">Strategic Logic:</span> Mineral asset development with permit, funding and offtake alignment.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tamatie -->
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl overflow-hidden hover:border-marula-gold/30 transition-all" data-aos="fade-up" data-aos-delay="0">
+          <div class="h-48 overflow-hidden"><img src="images/agri.jpg" class="w-full h-full object-cover" alt="Tamatie"></div>
+          <div class="p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="sector-tag bg-marula-green/15 text-marula-accent border border-marula-green/25 text-xs">Agriculture</span>
+              <span class="tx-status tx-status-progress text-xs">Farming Progress</span>
+            </div>
+            <h3 class="text-white font-bold text-xl mb-2">Tamatie E Bose</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">Offtake agreement and 100 hectare land secured. Farming in progress with phased expansion planned.</p>
+            <div class="bg-marula-darker rounded-lg p-4 border border-marula-green/10">
+              <p class="text-gray-300 text-sm"><span class="text-marula-gold font-semibold">Strategic Logic:</span> Execution readiness through land access and market-linked offtake.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AlgoAtWork -->
+        <div class="bg-marula-surface border border-marula-green/20 rounded-xl overflow-hidden hover:border-marula-gold/30 transition-all" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 overflow-hidden"><img src="images/algo.jpg" class="w-full h-full object-cover" alt="AlgoAtWork"></div>
+          <div class="p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="sector-tag bg-marula-green/15 text-marula-accent border border-marula-green/25 text-xs">Technology</span>
+              <span class="tx-status tx-status-ongoing text-xs">Ongoing</span>
+            </div>
+            <h3 class="text-white font-bold text-xl mb-2">AlgoAtWork Gauteng 4IR</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">R46m project value. Funding secured. Project ongoing with 4IR capacity development focus.</p>
+            <div class="bg-marula-darker rounded-lg p-4 border border-marula-green/10">
+              <p class="text-gray-300 text-sm"><span class="text-marula-gold font-semibold">Strategic Logic:</span> 4IR capacity development with secured project funding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-marula-green/20 to-marula-gold/10"></div>
+    <div class="absolute inset-0 bg-[url('images/hero1.jpg')] bg-cover bg-center opacity-10"></div>
+    <div class="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10" data-aos="zoom-in">
+      <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full border-2 border-marula-gold/30 flex items-center justify-center bg-marula-surface mb-6">
+        <i class="fas fa-handshake text-2xl md:text-3xl text-marula-gold"></i>
+      </div>
+      <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Have a Project to Discuss?</h2>
+      <div class="brand-accent-bar mx-auto mb-8"></div>
+      <p class="text-gray-300 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
+        Marula is actively seeking high-potential projects across mining, agriculture, aquaculture, technology and infrastructure. Let's explore how we can work together.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+        <a href="contact.html" class="px-8 py-3 md:px-10 md:py-4 bg-marula-gold text-marula-darker font-bold rounded hover:bg-marula-goldLight transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+          Submit Your Project
+        </a>
+        <a href="services.html" class="px-8 py-3 md:px-10 md:py-4 border-2 border-white/20 text-white font-semibold rounded hover:bg-white/5 transition-all">
+          Explore Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-marula-darker border-t-2 border-marula-green/20 pt-12 md:pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <img src="images/header.png" alt="Marula" class="h-16 w-auto">
+            
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Building African businesses. Creating lasting value through disciplined investment and strategic execution.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="about.html" class="hover:text-marula-gold transition-colors">About Us</a></li>
+            <li><a href="platform.html" class="hover:text-marula-gold transition-colors">Investment Platform</a></li>
+            <li><a href="services.html" class="hover:text-marula-gold transition-colors">Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-marula-gold transition-colors">Portfolio</a></li>
+            <li><a href="transactions.html" class="hover:text-marula-gold transition-colors">Transactions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-6">Sectors</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-center gap-3"><i class="fas fa-hard-hat w-5 text-marula-gold"></i> Mining</li>
+            <li class="flex items-center gap-3"><i class="fas fa-seedling w-5 text-marula-gold"></i> Agriculture</li>
+            <li class="flex items-center gap-3"><i class="fas fa-fish w-5 text-marula-gold"></i> Aquaculture</li>
+            <li class="flex items-center gap-3"><i class="fas fa-microchip w-5 text-marula-gold"></i> Technology</li>
+            <li class="flex items-center gap-3"><i class="fas fa-road w-5 text-marula-gold"></i> Infrastructure</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-6">Contact</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-start gap-3"><i class="fas fa-location-dot mt-1 text-marula-gold"></i> 286 Bryanston Drive, Sandton, South Africa</li>
+            <li class="flex items-center gap-3"><i class="fas fa-envelope text-marula-gold"></i> info@marulafund.com</li>
+            <li class="flex items-center gap-3"><i class="fas fa-globe text-marula-gold"></i> www.marulafm.co.za</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm text-center md:text-left"> Marula Fund Managers (Pty) Ltd. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="w-9 h-9 rounded-full bg-marula-green/20 border border-marula-green/30 flex items-center justify-center text-gray-400 hover:text-marula-gold hover:border-marula-gold/40 transition-all"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-marula-green/20 border border-marula-green/30 flex items-center justify-center text-gray-400 hover:text-marula-gold hover:border-marula-gold/40 transition-all"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('nav-glass');
+        navbar.classList.remove('py-3', 'md:py-4');
+        navbar.classList.add('py-2', 'md:py-3');
+      } else {
+        navbar.classList.remove('nav-glass');
+        navbar.classList.remove('py-2', 'md:py-3');
+        navbar.classList.add('py-3', 'md:py-4');
+      }
+    });
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    AOS.init({ duration: 800, once: true, offset: 100 });
+  </script>
+</body>
+</html>

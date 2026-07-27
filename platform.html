@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Platform | Marula Fund Managers</title>
+
+<meta name="title" content="Investment Platform | Marula Fund Managers">
+<meta name="description" content="Explore the Marula Fund Managers investment platform connecting investors, entrepreneurs, and strategic partners to scalable business opportunities across Africa.">
+<meta name="keywords" content="Investment platform, African investments, investors, entrepreneurs, funding platform, Marula Fund Managers">
+
+<link rel="canonical" href="https://marulafund.com/platform.html">
+
+<meta property="og:title" content="Investment Platform | Marula Fund Managers">
+<meta property="og:description" content="Connecting capital with opportunity through our strategic investment platform.">
+<meta property="og:url" content="https://marulafund.com/platform.html">
+
+<meta name="twitter:title" content="Investment Platform | Marula Fund Managers">
+<meta name="twitter:description" content="Discover investment opportunities and strategic partnerships across Africa.">
+
+
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marula Fund Managers">
+<meta property="og:image" content="https://marulafund.com/images/logo.png">
+<meta property="og:image:secure_url" content="https://marulafund.com/images/logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Marula Fund Managers Logo">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marulafund.com/images/logo.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marula: {
+              green: '#2E7D32',
+              dark: '#0F1F0F',
+              darker: '#0A140A',
+              gold: '#D4AF37',
+              goldLight: '#F4D03F',
+              accent: '#4CAF50',
+              surface: 'rgba(255,255,255,0.03)'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #0A140A; color: #f5f5f5; overflow-x: hidden; }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 50%, #D4AF37 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .nav-glass {
+      background: rgba(15, 31, 15, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 2px solid rgba(46, 125, 50, 0.3);
+    }
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(46, 125, 50, 0.15);
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      border-color: rgba(212, 175, 55, 0.4);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 25px rgba(46,125,50,0.1);
+    }
+    .gold-line {
+      height: 2px; background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    }
+    .brand-accent-bar {
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, #2E7D32, #D4AF37);
+      border-radius: 2px;
+    }
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .mobile-menu.open { transform: translateX(0); }
+    .platform-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(46, 125, 50, 0.15);
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .platform-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #2E7D32, #D4AF37);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .platform-card:hover::before { opacity: 1; }
+    .platform-card:hover {
+      border-color: rgba(212, 175, 55, 0.3);
+      background: rgba(46, 125, 50, 0.05);
+      transform: translateY(-6px);
+    }
+    .platform-number {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(46, 125, 50, 0.2);
+      border: 2px solid rgba(46, 125, 50, 0.4);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: #D4AF37;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .section-bg-image {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .section-bg-image::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(10, 20, 10, 0.92);
+      z-index: 0;
+    }
+    .section-bg-image > * { position: relative; z-index: 1; }
+    .gate-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(46, 125, 50, 0.15);
+      border-radius: 12px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      border-left: 3px solid rgba(46, 125, 50, 0.4);
+    }
+    .gate-card:hover {
+      border-left-color: #D4AF37;
+      background: rgba(46, 125, 50, 0.05);
+      transform: translateX(4px);
+    }
+    .gate-icon {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(46, 125, 50, 0.2);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 12px;
+    }
+    .connector-line {
+      position: absolute;
+      top: 24px;
+      left: 50%;
+      width: calc(100% - 48px);
+      height: 2px;
+      background: linear-gradient(90deg, #2E7D32, #D4AF37);
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+    @media (max-width: 1023px) {
+      .connector-line { display: none; }
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0A140A; }
+    ::-webkit-scrollbar-thumb { background: #2E7D32; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+
+    /* Prevent horizontal scroll on mobile */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix nav overflow */
+#navbar {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+#navbar .max-w-7xl {
+  max-width: 100%;
+}
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-3 md:py-4 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between w-full">
+      <a href="index.html" class="flex items-center gap-3 group shrink-0">
+        <img src="images/header.png" alt="Marula" class="h-10 sm:h-12 md:h-16 w-auto drop-shadow-lg group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] transition-all">
+      </a>
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Home</a>
+        <a href="about.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">About</a>
+        <a href="platform.html" class="text-sm font-medium text-marula-gold border-b-2 border-marula-gold pb-1">Platform</a>
+        <a href="services.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Services</a>
+        <a href="portfolio.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Portfolio</a>
+        <a href="transactions.html" class="text-sm font-medium text-gray-300 hover:text-marula-gold transition-colors">Transactions</a>
+        <a href="contact.html" class="px-5 py-2.5 bg-marula-gold text-marula-darker text-sm font-semibold rounded hover:bg-marula-goldLight transition-all hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]">Contact</a>
+      </div>
+      <button id="menuBtn" class="lg:hidden text-2xl text-white hover:text-marula-gold transition-colors shrink-0 ml-4">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] bg-marula-darker/98 backdrop-blur-xl lg:hidden flex flex-col items-center justify-center gap-8">
+    <button id="closeMenu" class="absolute top-6 right-6 text-3xl text-gray-400 hover:text-marula-gold"><i class="fas fa-times"></i></button>
+    <a href="index.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Home</a>
+    <a href="about.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">About</a>
+    <a href="platform.html" class="text-2xl font-serif text-marula-gold">Platform</a>
+    <a href="services.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Services</a>
+    <a href="portfolio.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Portfolio</a>
+    <a href="transactions.html" class="text-2xl font-serif text-white hover:text-marula-gold transition-colors">Transactions</a>
+    <a href="contact.html" class="px-8 py-3 bg-marula-gold text-marula-darker font-semibold rounded mt-4">Contact Us</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="relative min-h-[50vh] md:min-h-[60vh] w-full overflow-hidden flex items-center justify-center">
+    <div class="absolute inset-0 bg-[url('images/develop.jpg')] bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-marula-darker/90 via-marula-dark/85 to-marula-darker"></div>
+    <div class="relative z-10 text-center px-4 md:px-6 max-w-4xl mx-auto pt-24 md:pt-32 pb-16 md:pb-20">
+      <p class="text-marula-gold text-sm tracking-[0.2em] uppercase font-medium mb-4" data-aos="fade-up">From Opportunity to Portfolio Value</p>
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight" data-aos="fade-up" data-aos-delay="100">Our Investment Platform</h1>
+      <div class="gold-line w-16 md:w-24 mx-auto mb-6" data-aos="fade-up" data-aos-delay="200"></div>
+      <p class="text-gray-300 text-base md:text-xl max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+        Marula's platform links origination, project preparation, financial structuring, capital mobilisation, delivery support and portfolio management into one disciplined investment development process.
+      </p>
+    </div>
+  </section>
+
+  <!-- 6-Stage Platform -->
+  <section class="py-20 md:py-24 bg-marula-dark relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-marula-green/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-72 h-72 bg-marula-gold/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 relative">
+      <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+        <p class="text-marula-gold text-sm tracking-[0.2em] uppercase font-medium mb-4">The Marula Process</p>
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Six Stages of Value Creation</h2>
+        <div class="brand-accent-bar mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4 mb-12 md:mb-16 relative">
+        <div class="connector-line hidden lg:block"></div>
+        <div class="platform-card text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="platform-number mx-auto">1</div>
+          <h3 class="text-white font-bold text-sm mb-2">Opportunity Identification</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Sourcing and screening high-potential opportunities across priority sectors.</p>
+        </div>
+        <div class="platform-card text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="platform-number mx-auto">2</div>
+          <h3 class="text-white font-bold text-sm mb-2">Project Preparation</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Feasibility studies, business plans, project packaging and stakeholder alignment.</p>
+        </div>
+        <div class="platform-card text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="platform-number mx-auto">3</div>
+          <h3 class="text-white font-bold text-sm mb-2">Financial Structuring</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Technical studies, financial modelling, risk mitigation and bankability assessment.</p>
+        </div>
+        <div class="platform-card text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="platform-number mx-auto">4</div>
+          <h3 class="text-white font-bold text-sm mb-2">Capital Raising</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Access to equity, debt, DFIs, grants and blended finance partners.</p>
+        </div>
+        <div class="platform-card text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="platform-number mx-auto">5</div>
+          <h3 class="text-white font-bold text-sm mb-2">Project Delivery</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Implementation, construction and operational support.</p>
+        </div>
+        <div class="platform-card text-center" data-aos="fade-up" data-aos-delay="500">
+          <div class="platform-number mx-auto">6</div>
+          <h3 class="text-white font-bold text-sm mb-2">Portfolio Management</h3>
+          <p class="text-gray-500 text-xs leading-relaxed">Creating sustainable businesses and impact at scale.</p>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-marula-green/15 to-marula-gold/10 border border-marula-green/20 rounded-2xl p-6 md:p-10 text-center" data-aos="fade-up">
+        <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
+          <span class="text-marula-gold font-semibold">Every stage must improve the quality of the investment case.</span> Weak assumptions are surfaced early. Strong opportunities are advanced toward execution with structure and confidence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decision Gates -->
+  <section class="py-20 md:py-24 relative section-bg-image" style="background-image: url('images/map.jpg');">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+        <p class="text-marula-gold text-sm tracking-[0.2em] uppercase font-medium mb-4">Quality Control</p>
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">Platform Decision Gates</h2>
+        <div class="brand-accent-bar mx-auto"></div>
+        <p class="text-gray-300 mt-6 max-w-2xl mx-auto text-base md:text-lg">Every project must pass through rigorous decision gates before advancing. This ensures only the strongest, most viable opportunities reach capital markets.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+        <div class="gate-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="gate-icon"><i class="fas fa-bullseye text-marula-gold text-sm"></i></div>
+          <h3 class="text-white font-bold text-sm mb-2">Fit</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Sector, mandate, sponsor and partner alignment assessment.</p>
+        </div>
+        <div class="gate-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="gate-icon"><i class="fas fa-chart-bar text-marula-gold text-sm"></i></div>
+          <h3 class="text-white font-bold text-sm mb-2">Viability</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Commercial, technical, market, regulatory and ESG logic.</p>
+        </div>
+        <div class="gate-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="gate-icon"><i class="fas fa-university text-marula-gold text-sm"></i></div>
+          <h3 class="text-white font-bold text-sm mb-2">Bankability</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Funder requirements, evidence quality and risk allocation.</p>
+        </div>
+        <div class="gate-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="gate-icon"><i class="fas fa-cogs text-marula-gold text-sm"></i></div>
+          <h3 class="text-white font-bold text-sm mb-2">Execution</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Permits, procurement, contracts, capacity and controls.</p>
+        </div>
+        <div class="gate-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="gate-icon"><i class="fas fa-gem text-marula-gold text-sm"></i></div>
+          <h3 class="text-white font-bold text-sm mb-2">Value</h3>
+          <p class="text-gray-400 text-xs leading-relaxed">Portfolio performance, resilience and strategic growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Discipline -->
+  <section class="py-20 md:py-24 bg-marula-dark">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div data-aos="fade-right">
+          <p class="text-marula-gold text-sm tracking-[0.2em] uppercase font-medium mb-4">Our Standard</p>
+          <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">Platform Discipline</h2>
+          <div class="brand-accent-bar mb-8"></div>
+          <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-6">
+            A project should enter the funding market with clear logic, credible numbers, allocated risk, funder-ready documents and a delivery path that can survive scrutiny.
+          </p>
+          <p class="text-gray-400 leading-relaxed mb-8">
+            Marula's preparation model is designed to close the gap between concept and capital. Projects fail when strategy, finance, contracts, delivery and governance are treated as separate exercises. Our integrated approach ensures every element is aligned before a project reaches funders.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-marula-green/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fas fa-check text-marula-gold text-xs"></i>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-sm">Clear investment logic</p>
+                <p class="text-gray-500 text-xs">Every project has a defined mandate, market case and return profile before capital is sought.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-marula-green/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fas fa-check text-marula-gold text-xs"></i>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-sm">Credible financial models</p>
+                <p class="text-gray-500 text-xs">Auditable models with sensitivity testing, scenario analysis and lender review.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-marula-green/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fas fa-check text-marula-gold text-xs"></i>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-sm">Allocated risk framework</p>
+                <p class="text-gray-500 text-xs">Risks identified, priced and assigned to parties best able to manage them.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-marula-green/20 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fas fa-check text-marula-gold text-xs"></i>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-sm">Funder-ready documentation</p>
+                <p class="text-gray-500 text-xs">Complete evidence packs, governance structures and implementation plans.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative" data-aos="fade-left">
+          <div class="absolute -inset-4 bg-gradient-to-br from-marula-green/30 to-marula-gold/20 rounded-2xl blur-xl"></div>
+          <div class="relative rounded-2xl shadow-2xl w-full border border-marula-green/20 bg-marula-darker p-6 md:p-8">
+            <div class="flex items-center gap-4 mb-6 pb-6 border-b border-white/5">
+              <div class="w-12 h-12 rounded-full bg-marula-green/20 flex items-center justify-center">
+                <i class="fas fa-clipboard-list text-marula-gold text-lg"></i>
+              </div>
+              <div>
+                <h3 class="text-white font-bold text-lg">Preparation Checklist</h3>
+                <p class="text-gray-500 text-xs">Before any project enters the funding market</p>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 p-3 rounded-lg bg-marula-surface border border-marula-green/10">
+                <i class="fas fa-circle-check text-marula-accent text-sm"></i>
+                <span class="text-gray-300 text-sm">Mandate and opportunity framing defined</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-lg bg-marula-surface border border-marula-green/10">
+                <i class="fas fa-circle-check text-marula-accent text-sm"></i>
+                <span class="text-gray-300 text-sm">Technical and commercial feasibility completed</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-lg bg-marula-surface border border-marula-green/10">
+                <i class="fas fa-circle-check text-marula-accent text-sm"></i>
+                <span class="text-gray-300 text-sm">Financial model with sensitivity analysis</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-lg bg-marula-surface border border-marula-green/10">
+                <i class="fas fa-circle-check text-marula-accent text-sm"></i>
+                <span class="text-gray-300 text-sm">Risk register and mitigation plan</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-lg bg-marula-surface border border-marula-green/10">
+                <i class="fas fa-circle-check text-marula-accent text-sm"></i>
+                <span class="text-gray-300 text-sm">ESG integration and compliance review</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-lg bg-marula-surface border border-marula-green/10">
+                <i class="fas fa-circle-check text-marula-accent text-sm"></i>
+                <span class="text-gray-300 text-sm">Governance structure and PMO controls</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 rounded-lg bg-marula-surface border border-marula-green/10">
+                <i class="fas fa-circle-check text-marula-accent text-sm"></i>
+                <span class="text-gray-300 text-sm">Funder engagement strategy prepared</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 md:py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-marula-green/20 to-marula-gold/10"></div>
+    <div class="absolute inset-0 bg-[url('images/abouthero.jpg')] bg-cover bg-center opacity-10"></div>
+    <div class="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10" data-aos="zoom-in">
+      <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full border-2 border-marula-gold/30 flex items-center justify-center bg-marula-surface mb-6">
+        <i class="fas fa-rocket text-2xl md:text-3xl text-marula-gold"></i>
+      </div>
+      <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">From Idea to Impact</h2>
+      <div class="brand-accent-bar mx-auto mb-8"></div>
+      <p class="text-gray-300 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
+        We build value at every stage of the investment lifecycle. Let's explore how Marula's platform can transform your opportunity into a fundable, implementable reality.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+        <a href="services.html" class="px-8 py-3 md:px-10 md:py-4 bg-marula-gold text-marula-darker font-bold rounded hover:bg-marula-goldLight transition-all hover:shadow-[0_0_30px_rgba(212,175,55,0.3)]">
+          Explore Our Services
+        </a>
+        <a href="contact.html" class="px-8 py-3 md:px-10 md:py-4 border-2 border-white/20 text-white font-semibold rounded hover:bg-white/5 transition-all">
+          Start a Conversation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-marula-darker border-t-2 border-marula-green/20 pt-12 md:pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <img src="images/header.png" alt="Marula" class="h-16 w-auto">
+            
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Building African businesses. Creating lasting value through disciplined investment and strategic execution.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="about.html" class="hover:text-marula-gold transition-colors">About Us</a></li>
+            <li><a href="platform.html" class="hover:text-marula-gold transition-colors">Investment Platform</a></li>
+            <li><a href="services.html" class="hover:text-marula-gold transition-colors">Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-marula-gold transition-colors">Portfolio</a></li>
+            <li><a href="transactions.html" class="hover:text-marula-gold transition-colors">Transactions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-6">Sectors</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-center gap-3"><i class="fas fa-hard-hat w-5 text-marula-gold"></i> Mining</li>
+            <li class="flex items-center gap-3"><i class="fas fa-seedling w-5 text-marula-gold"></i> Agriculture</li>
+            <li class="flex items-center gap-3"><i class="fas fa-fish w-5 text-marula-gold"></i> Aquaculture</li>
+            <li class="flex items-center gap-3"><i class="fas fa-microchip w-5 text-marula-gold"></i> Technology</li>
+            <li class="flex items-center gap-3"><i class="fas fa-road w-5 text-marula-gold"></i> Infrastructure</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-6">Contact</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-start gap-3"><i class="fas fa-location-dot mt-1 text-marula-gold"></i> 286 Bryanston Drive, Sandton, South Africa</li>
+            <li class="flex items-center gap-3"><i class="fas fa-envelope text-marula-gold"></i> info@marulafund.com</li>
+            <li class="flex items-center gap-3"><i class="fas fa-globe text-marula-gold"></i> www.marulafm.co.za</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm text-center md:text-left"> Marula Fund Managers (Pty) Ltd. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="w-9 h-9 rounded-full bg-marula-green/20 border border-marula-green/30 flex items-center justify-center text-gray-400 hover:text-marula-gold hover:border-marula-gold/40 transition-all"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="w-9 h-9 rounded-full bg-marula-green/20 border border-marula-green/30 flex items-center justify-center text-gray-400 hover:text-marula-gold hover:border-marula-gold/40 transition-all"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('nav-glass');
+        navbar.classList.remove('py-3', 'md:py-4');
+        navbar.classList.add('py-2', 'md:py-3');
+      } else {
+        navbar.classList.remove('nav-glass');
+        navbar.classList.remove('py-2', 'md:py-3');
+        navbar.classList.add('py-3', 'md:py-4');
+      }
+    });
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    AOS.init({ duration: 800, once: true, offset: 100 });
+  </script>
+</body>
+</html>
