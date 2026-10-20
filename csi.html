@@ -247,12 +247,14 @@
     </div>
   </section>
 
-  <!-- Why CSI Section -->
+    <!-- Why CSI Section -->
   <section class="py-20 md:py-24 bg-marula-dark relative overflow-hidden">
     <div class="absolute top-0 right-0 w-96 h-96 bg-marula-green/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
     <div class="absolute bottom-0 left-0 w-72 h-72 bg-marula-gold/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
     <div class="max-w-7xl mx-auto px-4 md:px-6 relative">
       <div class="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+        
+        <!-- LEFT COLUMN: Text + Moved Badge -->
         <div data-aos="fade-right">
           <p class="text-marula-gold text-sm tracking-[0.2em] uppercase font-medium mb-4">Our Commitment</p>
           <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">Why Corporate Social Investment</h2>
@@ -260,19 +262,28 @@
           <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-6">
             At Marula Fund Managers, we believe that true investment success extends beyond financial returns. Our Corporate Social Investment (CSI) initiatives reflect our deep commitment to creating lasting positive change in the communities where we operate.
           </p>
-          <p class="text-gray-400 leading-relaxed mb-6">
+          <p class="text-gray-400 leading-relaxed mb-8">
             We recognise that sustainable economic growth in Africa requires more than capital—it requires investment in people, skills, culture, and community infrastructure. Our CSI portfolio is carefully curated to support organisations that demonstrate measurable impact, sustainable practices, and alignment with our values of empowerment, education, and cultural preservation.
           </p>
-          <!-- Removed the paragraph about strategic partnerships as requested -->
-        </div>
-        <div class="relative" data-aos="fade-left">
-          <div class="absolute -inset-4 bg-gradient-to-br from-marula-green/30 to-marula-gold/20 rounded-2xl blur-xl"></div>
-          <img src="images/about.jpg" alt="Community Development" class="relative rounded-2xl shadow-2xl w-full object-cover h-[350px] md:h-[500px] border border-marula-green/20">
-          <div class="absolute -bottom-4 md:-bottom-6 -right-4 md:-right-6 bg-marula-darker border-2 border-marula-green/30 p-4 md:p-6 rounded-xl shadow-xl" data-aos="zoom-in" data-aos-delay="300">
-            <p class="text-2xl md:text-3xl font-serif font-bold gold-gradient-text">R1.8bn+</p>
-            <p class="text-gray-400 text-xs md:text-sm mt-1">Community Funds Managed</p>
+          
+          <!-- MOVED BADGE: Now sits in the text column, no longer overlapping images -->
+          <div class="inline-flex items-center gap-4 bg-marula-darker border-2 border-marula-green/30 p-4 md:px-6 rounded-xl shadow-xl" data-aos="zoom-in" data-aos-delay="300">
+            <div class="w-12 h-12 rounded-full bg-marula-green/20 flex items-center justify-center border border-marula-green/30">
+              <i class="fas fa-hand-holding-dollar text-marula-gold text-xl"></i>
+            </div>
+            <div>
+              <p class="text-2xl md:text-3xl font-serif font-bold gold-gradient-text">R1.8bn+</p>
+              <p class="text-gray-400 text-xs md:text-sm mt-1">Community Funds Managed</p>
+            </div>
           </div>
         </div>
+
+        <!-- RIGHT COLUMN: Image only (Badge removed from here) -->
+        <div class="relative" data-aos="fade-left">
+          <div class="absolute -inset-4 bg-gradient-to-br from-marula-green/30 to-marula-gold/20 rounded-2xl blur-xl"></div>
+          <img src="images/themba.jpg" alt="Community Development" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px] md:h-[600px] border border-marula-green/20">
+        </div>
+        
       </div>
     </div>
   </section>
