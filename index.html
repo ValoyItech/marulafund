@@ -227,6 +227,20 @@
       border-color: #2E7D32;
       box-shadow: 0 20px 40px rgba(0,0,0,0.3);
     }
+    .portfolio-logo-spot-bg {
+      width: 100%;
+      min-height: 104px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      background: #000000;
+      border-radius: 10px;
+    }
+    .portfolio-logo-spot-bg .portfolio-logo-img {
+      margin-bottom: 0;
+    }
     .portfolio-logo-img {
       width: 140px;
       max-width: 100%;
@@ -860,9 +874,9 @@
               </div>
               <h3 class="text-white font-bold text-lg">Security & Risk</h3>
             </div>
-            <p class="text-gray-300 text-sm leading-relaxed mb-3">Armed response, guarding, VIP protection, estate security and mall security.</p>
+            <p class="text-gray-300 text-sm leading-relaxed mb-3">Professional security services, armed response, VIP protection, guarding and security training..</p>
             <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-3 py-1 rounded-full bg-marula-green/20 text-marula-accent border border-marula-green/30">Kentse Security</span>
+              <span class="text-xs px-3 py-1 rounded-full bg-marula-green/20 text-marula-accent border border-marula-green/30">Spot Reaction Security</span>
             </div>
           </div>
         </div>
@@ -952,14 +966,16 @@
                 <p class="text-gray-500 text-sm mt-3 leading-relaxed">Global business development, PMO and fibre.</p>
               </div>
             </div>
-            <!-- Slide 7: Kentse Security -->
+            <!-- Slide 7: Spot Reaction Security -->
             <div class="portfolio-slide">
               <div class="portfolio-logo-card">
-                <img src="images/kentse.png" alt="Kentse Security" class="portfolio-logo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.portfolio-logo-fallback')?.classList.remove('hidden');">
-                <div class="portfolio-logo-fallback hidden"><i class="fas fa-shield-halved"></i></div>
-                <h3 class="text-gray-900 font-bold text-lg md:text-xl mb-2">Kentse Security</h3>
+                <div class="portfolio-logo-spot-bg">
+                  <img src="images/spot.png" alt="Spot Reaction Security" class="portfolio-logo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.portfolio-logo-fallback')?.classList.remove('hidden');">
+                  <div class="portfolio-logo-fallback hidden"><i class="fas fa-shield-halved"></i></div>
+                </div>
+                <h3 class="text-gray-900 font-bold text-lg md:text-xl mb-2">Spot Reaction Security</h3>
                 <span class="text-marula-green text-xs uppercase tracking-wider font-semibold">Security</span>
-                <p class="text-gray-500 text-sm mt-3 leading-relaxed">Armed response, guarding and VIP protection.</p>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">On-site security, rapid response and professional security training.</p>
               </div>
             </div>
             <!-- Slide 8: ValoyiTech -->
@@ -970,6 +986,16 @@
                 <h3 class="text-gray-900 font-bold text-lg md:text-xl mb-2">ValoyiTech</h3>
                 <span class="text-marula-green text-xs uppercase tracking-wider font-semibold">Technology</span>
                 <p class="text-gray-500 text-sm mt-3 leading-relaxed">Digital solutions and capacity building.</p>
+              </div>
+            </div>
+            <!-- Slide 9: Rural Connect Network -->
+            <div class="portfolio-slide">
+              <div class="portfolio-logo-card">
+                <img src="images/rural.png" alt="Rural Connect Network" class="portfolio-logo-img" onerror="this.style.display='none'; this.parentElement.querySelector('.portfolio-logo-fallback')?.classList.remove('hidden');">
+                <div class="portfolio-logo-fallback hidden"><i class="fas fa-store"></i></div>
+                <h3 class="text-gray-900 font-bold text-lg md:text-xl mb-2">Rural Connect Network</h3>
+                <span class="text-marula-green text-xs uppercase tracking-wider font-semibold">Rural Digital Platform</span>
+                <p class="text-gray-500 text-sm mt-3 leading-relaxed">A digital marketplace connecting rural businesses, freelancers and local opportunities.</p>
               </div>
             </div>
           </div>
@@ -985,6 +1011,7 @@
           <button class="carousel-dot" data-index="5"></button>
           <button class="carousel-dot" data-index="6"></button>
           <button class="carousel-dot" data-index="7"></button>
+          <button class="carousel-dot" data-index="8"></button>
         </div>
       </div>
 
